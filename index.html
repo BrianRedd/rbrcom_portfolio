@@ -1,0 +1,843 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<!-- Required meta tags always come first -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!-- Bootstrap CSS -->
+	<!-- build:css css.main.css -->
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- endbuild-->
+
+	<title>R. Brian Redd.com</title>
+	<!-- Git Repo: https://github.com/BrianRedd/rbrcom_portfolio.git-->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111890871-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-111890871-1');
+	</script>
+</head>
+<body>
+
+	<!--Tagline Modal-->
+	<div id="ditibi_modal" class="modal" role="dialog">
+		<div class="modal-special" role="content">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div id="ditibi_carousel" class="carousel slide" data-interval="false">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item uwa_dream active" slide="0">
+								<div class="carousel-header col-12">
+									<h3 class="col-12">YOU DREAM IT
+										<button type="button" class="close text-white">
+											<span class="fa fa-close text-white"></span>
+										</button>
+									</h3>
+								</div>
+								<div class="carousel-caption d-block">
+									<p class="hidden-sm-down">You have a dream. An idea. A way to improve profits, visibility, reach. Something new. Something COOL.</p>
+									<p class="hidden-sm-down">Now What?</p>
+									<p class="hidden-md-up">You have an idea.</p>
+								</div>
+							</div>
+							<div class="carousel-item uwa_think" slide="1">
+								<div class="carousel-header d-block">
+									<h3>WE THINK IT
+										<button type="button" class="close text-white">
+											<span class="fa fa-close text-white"></span>
+										</button>
+									</h3>
+								</div>
+								<div class="carousel-caption d-block">
+									<p class="hidden-sm-down">You bring your dream to me, and together we'll bring form to it. Together, we'll isolate the core problem you're trying to resolve; the core object you're trying to achieve. Together, we'll collaborate on how to bring your dream to reality.</p>
+									<p class="hidden-md-up">We collaborate together.</p>
+								</div>
+							</div>
+							<div class="carousel-item uwa_build" slide="2">
+								<div class="carousel-header d-block">
+									<h3>I BUILD IT
+										<button type="button" class="close text-white">
+											<span class="fa fa-close text-white"></span>
+										</button>
+									</h3>
+								</div>
+								<div class="carousel-caption d-block">
+									<p class="hidden-sm-down">Using my two decades of experience in web, UI/UX, and full-stack development, I'll bring your dreams and ideas to reality. After isolating the core of your needs, I'll use the right tool for your solution.</p>
+									<p class="hidden-md-up">I bring it to reality.</p>
+								</div>
+							</div>
+						</div>
+						<ol class="carousel-indicators">
+							<li data-target="#ditibi_carousel" data-slide-to="0" class="active"></li>
+							<li data-target="#ditibi_carousel" data-slide-to="1"></li>
+							<li data-target="#ditibi_carousel" data-slide-to="2"></li>
+						</ol>
+						<a class="carousel-control-prev nextprev justify-content-start" role="button" data-slide="prev">
+							<span class="fa fa-chevron-left fa-2x"></span>
+						</a>
+						<a class="carousel-control-next nextprev justify-content-end" role="button" data-slide="next">
+							<span class="fa fa-chevron-right fa-2x"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Portfolio Item Modals-->
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_qaa">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">QA Authenticator</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Build a tool to allow access to Olive customer sites</h4>
+					<p>As many Olive customer sites are authenticated (behind a paywall), Olive developed a methodology to interface with any subscriber/circulation system. Authenticated users are returned to a protected Olive site via an "authenticating" URL, which contains, among the various query string parameters, and MD5 hash value based on a shared secret passphrase. To improve Olive's (and, initially, my own) ability to troubleshoot problems and manage the vast number of client sites we have, I built a tool ("QA Authenticator") that not only lists all of our client sites, but, as needed, will generate the site-specific authenticating URL.</p>
+					<p>Initially built for my own use, this tool evolved into a company-wide resource for the Professional Services, Production, and Sales departments.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>The first iteration of this tool used a JavaScript include as the data store. As I learned jQuery and its AJAX function, I rebuilt the site using jQuery and jQueryUI, with an XML datastore.  I then created an Editor tool to allow Olive personnel to edit the content of this XML datastore. As XML is quite heavy, the next (and current) iteration replaced the XML with a JSON datastore.</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<img class="img-fluid" src="img/Port_QAA_full.png">
+						</div>
+						<div class="col-12 col-md-6">
+							<p>The QA Authenticator tool has been used at Olive for over ten years, and is currently on version 6.1. Because this site contains proprietary data, it is not publically accessible. While it does run client-side, it is fully mobile compatible using CSS3 media queries and manually set breakpoints.</p>
+							<p>In addition to being used internally, certain large multi-publication clients have been granted access to stripped down versions of QAA that allow them only access to their publications.</p>
+							<p>The next iteration will replace jQueryUI with Bootstrap.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_usa">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">USA Today Digital Edition Left Rail</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Customized left rail for USA Today's digital edition</h4>
+					<p>USA Today, one of Olive's clients, requested a customized left-rail for the replica digital edition. Part of this includes a pull-out "Close" tab (replacing the standard "x" found in the Olive Dynammic Newsstand template).</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>This is just one example of the type of web development work I do regularly at Olive Software. The Olive application (in this case, Olive Dynamic Newsstand) is an HTML5 based web app running on an ASP.NET back-end. The interfaces (called "skins") are template-based, involving a generic template folder, a "skin" folder (containing delta and include files for everything unique about a specific implementation), and a compiled "wwwroot" folder containing the final visible product.</p>
+					<p>To create custom visuals or controls to an Olive skin, one must ascertain what files/controls in the template must be manipulated, manipulate them to the customer specifications, and then ensure that they will integrate smoothly into the "skin" folder. This is essential for maintanence and replication.</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<p>USA Today hosts several skins through Olive, and each contains this custom content.  While USA Today proper is behind a paywall, the demo skin is available <a href="http://ee.usatoday.com/sample/default.aspx" target="_blank">here</a>.</p>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="http://ee.usatoday.com/sample/default.aspx" target="_blank"><img class="img-fluid" src="img/Port_USA_full.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_iom">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Isle of Man Archive</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Update Isle of Man Manx Heritage Archive Site</h4>
+					<p>Along with digital replica editions, Olive offers an archive inteface providing browse and search access to scanned historical data. The Isle of Man government purchased Olive's ActivePaper Archive application to be hosted within their own data center in Douglas, Isle of Man. I travelled to Isle of Man in April of 2010 (and was subsequently trapped there thanks to the eruption of Eyjafjallajökull) to train them and set up their archive site.</p>
+					<p>Then, in 2016, Olive updated our archive application from APA v3 to APA v5 (moving from an ASP based desktop-only application to an HTML5, ASP.NET-based, responsive design). With the new version came the opportunity to redesign and rebuild their archive site, all done remotely.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>I worked extensively with the Isle of Man team on their redesign. They wanted their site to integrate smoothly with non-Olive "Newspapers" <a href="https://www.imuseum.im/newspapers/" target="_blank">site</a>. Once the design was finalized, I built the mock-up within the Olive self-hosted environment, and, once the skin was approved by the client, I remoted into their environment and performed the software and skin upgrade.</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<img class="img-fluid" src="img/Port_IOM_full.png">
+						</div>
+						<div class="col-12 col-md-6">
+							<p>The build was completed to the customer satisfaction. Now users of the Isle of Man library archive can search and browse all thirty-two (and counting) publications contained within their Olive application, both on desktop and mobile devices.</p>
+							<p>This site is behind a paywall, so no demo is available.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_snl">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Swiss National Library Archive</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Customizing and managing the Archive skin for Swiss National Library</h2>
+					<p>Along with Isle of Man, the Swiss National Library is another foreign Olive archive client. Their site is unique in that it supports four languages (French, German, English, and Italian), and is home to forty-three titles from eight cantons.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>This dynamic archive is constantly growing as more titles are digitized. The client requested a robust "Home" tab interface that allows users to see information on each publication (including sponsors) and to pre-select which publication(s) are searched within from the Home tab.</p>
+					<p>Not only does this page function, but it is constantly being updated (in all four languages) as new content is made available.</p>
+					<p>Like Isle of Man, this is a customer-hosted site, so changes to these skins must be done remotely.</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<p>This site is publically available, and can be viewed here:</p>
+							<ul>
+								<li><a href="http://newspaper.archives.rero.ch/Olive/APA/SNL_EN/default.aspx" target="_blank">English</a></li>
+								<li><a href="http://newspaper.archives.rero.ch/Olive/APA/SNL_FR/default.aspx" target="_blank">French</a></li>
+								<li><a href="http://newspaper.archives.rero.ch/Olive/APA/SNL_DE/default.aspx" target="_blank">German</a></li>
+								<li><a href="http://newspaper.archives.rero.ch/Olive/APA/SNL_IT/default.aspx" target="_blank">Italian</a></li>
+							</ul>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="http://newspaper.archives.rero.ch/Olive/APA/SNL_EN/default.aspx" target="_blank"><img class="img-fluid" src="img/Port_SNL_full.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_ctc">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Chicago Tribune Replica Edition Redesign</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Redesign of the Chicago Tribune digital replica edition</h4>
+					<p>When initially onboarded by Olive Software, the Chicago Tribune and other Tribune Publishing titles where configured using Olive Software's standard "Olive Digital Edition" template. However, as this did not match the design and feel of Chicago's dot-com site, in 2013 they contracted for Olive to redesign their digital replica edition. Eager for the challenge, I volunteered for this task.</p>
+					<div class="row row-content">
+						<figure class="col-12 col-sm-4">
+							<img class="img-fluid img-thumbnail" src="img/CTC_ODE_orig.png" alt="Original Design: Main"/>
+							<figcaption class="figure-caption">Original template</figcaption>
+						</figure>
+						<figure class="col-12 col-sm-4">
+							<img class="img-fluid img-thumbnail" src="img/CTC_ODE_orig_toc.png" alt="Original Design: TOC"/>
+							<figcaption class="figure-caption">With Table of Contents extended</figcaption>
+						</figure>
+						<figure class="col-12 col-sm-4">
+							<img class="img-fluid img-thumbnail" src="img/CTC_ODE_orig_article.png" alt="Original Design: Article"/>
+							<figcaption class="figure-caption">Article View</figcaption>
+						</figure>
+					</div>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>The Olive Software skin (UI) architecture was based on a template (containing all common and default elements of an Olive skin) and a "skin" (delta files specific to the publication implementation). The Olive Digital Edition application was built on a ASP.NET back-end with custom Olive handlers and controls, and tied into a Flash-based publication viewer. (Olive has since retired the "Olive Digital Edition" application, replacing the Flash component with a pure HTML5 display.)</p>
+					<p>The Chicago Tribune design was significantly different from the Olive template, while maintaining same basic functionality. I had to decontruct the original template, isolate each component, modify as needed, and build a new template following Tribune's design specifications. In addition, the new UI had to be in itself a new template, as Chicago was only the first of the Tribune publications to use this new design.</p>
+					<div class="row row-content">
+						<figure class="col-12 col-sm-4">
+							<img class="img-fluid img-thumbnail" src="img/CTC_ODE_new.png" alt="Original Design: Main"/>
+							<figcaption class="figure-caption">New design</figcaption>
+						</figure>
+						<figure class="col-12 col-sm-4">
+							<img class="img-fluid img-thumbnail" src="img/CTC_ODE_new_toc.png" alt="Original Design: TOC"/>
+							<figcaption class="figure-caption">With Table of Contents extended as lateral pullouts rather than an accordion</figcaption>
+						</figure>
+						<figure class="col-12 col-sm-4">
+							<img class="img-fluid img-thumbnail" src="img/CTC_ODE_new_article.png" alt="Original Design: Article"/>
+							<figcaption class="figure-caption">New design article view</figcaption>
+						</figure>
+					</div>
+					<h4 class="thebuild">The Build:</h4>
+					<p>I was able to successfully implement the new design, and replicate this across ten publications. When I was unable to interpret specific handler behavior, I was able to isolate the specific questions that needed answers and received necessary assistance from my R &amp; D team in Israel.</p>
+					<p>The customer was very satified with the revised design, and used it for several years. It was only when Olive retired the Flash-based ODE that Tribune, now TRONC, chose another replica edition vendor.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_rbr">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">RBrianRedd.com version 1</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream: Initial build of my personal/professional website</h4>
+					<p>After studying HTML5, CSS3, and jQuery, in 2011 it was time for me to build my own website. I wanted to showcase my technical and design skills, as well as build a site that was unique. While I remain proud of "version 1" of rbrianredd.com, the navigation is non-intuitive, and many aspects of it are now dated.</p>
+					<p>NOTE: This was pre-Bootstrap, so the carousels that are in place were coded by scratch in jQuery.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>Along with the aforementioned manually coded carousels (I built my own carousel prototype and reused), the original <a href="http://rbrianredd.com" target="_blank">rbrianredd.com</a> contains many CSS3 effects to provide movement, and heavy use of jQuery to provide navigation (mousing over the five icons around the central gryphon will display menu detail, and clicking will open a modal, also manually encoded). The page makes heavy use of iFrames to access multiple pages within the site's structure.</p>
+					<p>While initially I intended to make the site responsive, this never came about (until the advent of version 2 of the site).</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<a href="http://www.rbrianredd.com" target="_blank"><img class="img-fluid" src="img/Port_rbrc_full.png"></a>
+						</div>
+						<div class="col-12 col-md-6">
+							<p>This site suited me well for several years, until my studies of Bootstrap, and more advanced JavaScript libraries/frameworks (Angular, React, etc) prompted me to revisit it; thus the current redesign.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_rrt">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">PSD to Web Code Challenge</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Convert a Photoshop mock-up into a functioning website</h2>
+					<p>In 2011, I took a coding challenge to convert a multi-layered Photoshop PSD file into function website. This site was to be as close as possible to a pixel-perfect replica of the source document, and was to not only use the latest available technologies, but also remain fully IE6 compliant. I was given a week to complete this task.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>As they say, the only way to eat an airplane is one spoonful at a time. The first step was to isolate the different components (navigation, content boxes, etc) of the PSD and reconstruct them in HTML. Then, using extracted graphics from the PSD and CSS, i converted the framework of the website into a fully functional version of the mockup. Some components (rounded corners, etc) were particularly difficult, as IE6 did not support CSS3. While CSS3 was employed, IE6 fallbacks were also implemented.</p>
+					<p>This was the first instance where I used the carousel code I later employeed in rbrianredd.com and other sites (remember, this was pre-Bootstrap).</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<a href="http://rbrianredd.com/projects/ncc/index.html" target="_blank"><img class="img-fluid" src="img/Port_RRT_full.png"></a>
+						</div>
+						<div class="col-12 col-md-6">
+							<p>The project was completed by the deadline, and met with resounding approval by the team reviewing it.</p>
+							<p>Some items of the initial coding (in-line JavaScript, etc.) was brought to my attention, and with the experience of my first build under my belt and encouraged by feedback I'd received, I built a second version of the site in just under two days (available <a href="http://rbrianredd.com/projects/ncc/index.html" target="_blank">here</a>). For the second version, I made it mobile responsive and improved the overall coding.</p>
+							<p>This was an invaluable experience.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_opinicus">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Opinicus Soaps</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Build a new site for Opinicus Soaps</h2>
+					<p>When my wife started her handmade soap company, Opinicus Soaps, she set up her website through a hosting/shop solution, and was forced to use their template to create her site. To create a better site, she turned to me to build one from scratch, using HTML5, CSS3, and jQuery.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>I worked with my wife to collaboratively design a new website, utilizing the newest techonologies available in 2012. Navigation is tab-based, with multiple pages containing information on products, processes, and what current Renaissance Festival her shop is at. In addition, it looks to her separate store site where customers can purchase her products online.</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<p>We had hoped that we'd be able to replace her existing website (<a href="http://www.opinicussoaps.com" target="_blank">http://www.opinicussoaps.com</a>) with the new one, we were ultimately unable to do so (her current provider doesn't support uploaded HTML, and still requires the use of their template). The mock-up is available <a href="http://www.rbrianredd.com/projects/opinicussoaps" target="blank">here</a>.</p>
+							<p>Now, the site design is dated.  However, as we explore more options with her current website provider, we may re-address this project using a more up-to-date design and the latest available web technologies.</p>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="http://www.rbrianredd.com/projects/opinicussoaps" target="blank"><img class="img-fluid" src="img/Port_opinicus_full.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="pers_zane">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Zane's Tower</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>Convert a text-based game written in BASIC to a visual web-based game, and also teach myself JavaScript</h2>
+					<p>Back in 2002, I had the desire to teach myself JavaScript. What better project to use this on than a web-based visual adventure game, based off a a text-based game I had written in BASIC on my Commodore 64 the decade previous.</p>
+					<p>This was a time when HTML tables were used as the primary design framework for most websites (this was also the end of the era of animated gifs).</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>While extremely dated now, <a href="http://www.rbrianredd.com/games/z2/" target="_blank">Zane's Tower</a> was cutting edge at the time. Instead of depending on tables, I discovered this new DOM element called the DIV, which was only supported by IE5 at the time. Using DIV's, I was able to produced the layered effects required for the game to function.</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<p>I still find myself playing this game every once and a while. Modern browsers and screen sizes make for some challenges (the game was designed for browser windows no larger than 680 pixels wide), but the game still functions. I keep meaning to come back to it, using with modern technologies such as HTML5, CSS3, and jQuery.</p>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="http://www.rbrianredd.com/games/z2/" target="_blank"><img class="img-fluid" src="img/Pers_zane_full.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="pers_lyr">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Moons of Lyr</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/>To create a dynamic night sky web application for the fictional world of Lyr</h4>
+					<p>When I am not working, in school learning new web development skills, or doing personal web development, I write fantasy novels. As of now I have completed six novels, three in a single series and three stand-alone, and three in what I would consider final drafts.</p>
+					<p>The World of Lyr is not in any of my currently completed works. I had an idea for a world with three moons, and the story revolved around our hero doing something before the next quadruple eclipse (at which time, if our hero is unsuccessful, the world would be destroyed). To get a feel for what living under a sky with three moons would be like, I decided to write a web app that would replicate show it, based on the day, time, and location on the planet of Lyr you stood.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>Who would've thought web design could involve so much math! I learned more about sines, angles, radians, and the such building this page than any writer (or web designer) should need to. The page is built around a circular "sky" (representing the sky as you look up), and each moon is defined by its orbital period and relative size. Then, based on calculated positions of each moon in relation to the sun and the viewer, shading is applied in the form of border-radius CSS code.</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<p>The page is lacking in documentation so if you're unfamiliar with the three moons and the calendar it may be hard to navigate. But in the end, it is a fully functional and kind of fun exploration of what living in a world with three moons could be like (and, more appropriately, the power of the web as a tool to fire the imagination.)</p>
+						</div>
+						<div class="col-12 col-md-6">
+							<a href="http://rbrianredd.com/writing/Lyr/sky.html" target="_blank"><img class="img-fluid" src="img/Pers_lyr_full.png"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="pers_robo">
+		<div class="modal-dialog modal-lg" role="content">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">RoboRally Online</h4>
+					<button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<h4 class="thedream">The Dream:<br/> To convert 1990's Wizards of the Coast board game RoboRally into a web application</h4>
+					<p>RoboRally is a board game where players each play insane robots on a dangerous futuristic factory floor racing each other for flags while trying to avoid being killed by their environment or opponents. Each player is given a number of program cards (based on their robot's current life total); with the cards the player programs their robot to move, and then hilarity ensues.</p>
+					<p>I've always thought this boardgame lent itself to a computer game. In 2012, once I discovered the finer details of jQuery animations, I set upon the task of doing just that.</p>
+					<h4 class="thethought">The Thought Process: Challenges</h4>
+					<p>RoboRally is a game with multiple boards, and features on each board with their own functionaity. For instance, some conveyor belts will move a robot one square; others will move them two. There are gears that turn one way or the other. There are even pushs and squashers. Luckily, each thing happens on its own phase, which makes for controlling them easier.</p>
+					<p>The first step was to break the game into layers. Then figure out a way to define each layer one each square. Determine order in which things happen, figure out how to apply each action to the pieces on the board. Program necessary animations.</p>
+					<p>The final challenge was the opponent robots. Figuring out how to program your own robot was easy; figuring out how to apply "intelligence" to the choices of your opponent robots was more difficult. I wanted to avoid the "brute-force" method (where each possible combination of cards was checked and the best choice ultimately applied); instead, I did these checks on a per-card basis: which card got the robot closest to it's goal? Then, which of the remaining cards gets them closest? And so on.</p>
+					<p>This is to say, they are not very intelligent. However, there is a method to their madness (and, perhaps, to mine).</p>
+					<h4 class="thebuild">The Build:</h4>
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<a href="http://rbrianredd.com/Games/RoboRally/" target="_blank"><img class="img-fluid" src="img/Pers_robo_full.png"></a>
+						</div>
+						<div class="col-12 col-md-6">
+							<p>The <a href="http://rbrianredd.com/Games/RoboRally/" target="_blank">end result</a> is a functional and fun solo game. I tried to include detailed instructions, although having foreknowledge of the board game definitely helps.</p>
+							<p>NOTE: This is not a licensed version; this is intended for personal use only. I do not own any of the rights to this game, and it is placed here as an example of my coding skills only.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--Main Screen-->
+	<div class="main" id="top">
+		<!--Floating BG Image-->
+		<div class="gryphon"></div>
+		
+		<!--Left Navigation-->
+		<div id="navbar">
+			<a class="gryph-logo" href="#top">
+				<span class="logo-text">Home</span>
+			</a>
+			<nav class="main-nav vertical-nav">
+				<a rel="contact" href="#contact">
+					<span class="fa fa-envelope-open"></span>
+				</a>
+				<a rel="about" href="#about">
+					<span class="fa fa-user-circle"></span>
+				</a>
+				<a rel="work" href="#work">
+					<span class="fa fa-eye"></span>
+				</a>
+				<a rel="play" href="#play">
+					<span class="fa fa-gamepad"></span>
+				</a>
+			</nav>
+			<nav class="social-nav vertical-nav">
+				<a rel="github" href="https://github.com/BrianRedd" target="_new">
+					<span class="fa fa-github"></span>
+				</a>
+				<a rel="bitbucket" href="https://bitbucket.org/RBrianRedd/" target="_new">
+					<span class="fa fa-bitbucket"></span>
+				</a>
+				<a rel="linkedin" href="https://www.linkedin.com/in/brian-redd-849b1b1/" target="_new">
+					<span class="fa fa-linkedin"></span>
+				</a>
+				<a rel="email" href="mailto:me@rbrianredd.com">
+					<span class="fa fa-at"></span>
+				</a>
+			</nav>
+		</div>
+
+		<!--Main Screen-->
+		<div class="container landing">
+			<div class="row row-content align-items-end">
+				<div class="col-12 inview" data-background-color="3">
+					<h1 class="rbr_name">R. Brian Redd</h1>
+				</div>
+			</div>
+			<div class="row row-content align-items-start">
+				<div class="col-12">
+					<h2 class="rbr_title">Web Design &amp; Development</h2>
+				</div>
+			</div>
+			<div class="row row-content align-items-start">
+				<div class="col-12 col-md-4">
+					<h3 class="ditibi text-center" val=0>Dream It</h3>
+				</div>
+				<div class="col-12 col-md-4">
+					<h3 class="ditibi text-center" val=1>Think It</h3>
+				</div>
+				<div class="col-12 col-md-4">
+					<h3 class="ditibi text-center" val=2>Build It</h3>
+				</div>
+			</div>
+			<div class="lookdown col-12 row">
+				<a href="#about"><span class="fa fa-2x fa-chevron-down"></span></a>
+			</div>
+		</div>
+		
+	</div>
+	
+	<!--Bottom section-->
+	<div class="bacon">
+	
+		<!--About me-->
+		<div class="gryph_mask"></div>
+		<div class="container" id="about">
+			<section class="row row-content inview" data-background-color="1">
+				<div class="lookdown-section col-12 row">
+					<a href="#top"><span class="fa fa-2x fa-chevron-up"></span></a>
+				</div>
+				<div class="col-12 row">
+					<h2>About Me!</h2>
+				</div>
+				<div class="col-12 row">
+					<div class="col-12 col-sm-4">
+						<div class="row no-gutters">
+							<div class="col-3 col-sm-12 col-md-6 imgholder">
+								<img class="img-fluid aboutmepic1" src="http://www.gravatar.com/avatar/7ca87a9cbd66e1e4ee594cdc491d9fa3.jpg?s=200&r=g" alt="Brian's Gravitar"/>
+							</div>
+							<div class="col-3 col-sm-12 col-md-6 imgholder">
+								<img class="img-fluid aboutmepic2" src="img/Brian_at_Stonehenge.jpg" alt="Brian at Stonehenge"/>
+							</div>
+							<div class="col-3 col-sm-12 col-md-6 imgholder">
+								<img class="img-fluid aboutmepic3" src="img/Brian_and_Weird_Al.jpg" alt="Brian with Weird Al"/>
+							</div>
+							<!--div class="col-3 col-sm-12 col-md-6 imgholder">
+								<img class="img-fluid aboutmepic3" src="img/Brian_and_Dan_Wells.jpg" alt="Brian with Dan Wells"/>
+							</div-->
+							<div class="col-3 col-sm-12 col-md-6 imgholder">
+								<img class="img-fluid aboutmepic4" src="img/Brian_at_Work.jpg" alt="Brian Working"/>
+							</div>
+						</div>
+					</div>
+					<div class="col-11 offset-1 col-sm-8 offset-sm-0">
+						<div class="row">
+							<h5 class="font-italic">&quot;The only way to eat an elephant is one spoonful at a time.&quot;</h5>
+						</div>
+						<div class="row">
+							<p>My first "all nighter" was Christmas night 1981, when I spent all night learning BASIC on my brand new Vic-20 computer. I've been fascinated with computers ever-since.</p>
+							<p>Although I graduated from the University of Colorado with a liberal art's degree (Religious Studies), I've always owned and used a computer. Professionally, I've been in the IT field since 1997.  Currently, I'm a Senior Professional Services Engineer and Front-end Web Developer for <a href="http://www.olivesoftware.com" target="_blank">Olive Software</a> (a position I've held since 2002). Prior to that, I taught Cisco classes (<acronym title="Cisco Certified Network Associate">CCNA</acronym> and <acronym title="Cisco Certified Design Associate">CCDA</acronym>) for the now-defunct Oxford Lane. In the interim between Oxford Lane and Olive, I taught myself JavaScript by building a web-based computer game, <a href="http://rbrianredd.com/Games/Z2/" target="_blank" class="nowrap" data-toggle="tooltip" data-html="true" data-placement="bottom" title="Warning: this was built in 2002 and hasn't been updated since; it is not fully compatible with modern browsers.">Zane's Tower</a>.</p>
+							<p>Web Development is a passion of mine.  Over the years I've picked up a great number of skills (<span class="fa fa-html5"></span> HTML5, <span class="nowrap"><span class="fa fa-css3"></span> CSS3</span>, jQuery, Bootstrap, Angular, etc) and am continuing to explore new technologies. The purpose of having the most tools in your toolbox is so you can determine the best tool for the job; some technologies, as cool as they may be, may not be suited for the task at hand. Trying to use the shiniest technology just to use it is akin to using a hammer on a screw: it'll get the job done, but is far from optimal.</p>
+						</div>
+						<div class="row resume">
+							<div class="hidden-xs-down col-4">R. Brian Redd's Resum&eacute;:</div>
+							<div class="col-6 col-sm-4">
+								<a href="https://www.visualcv.com/r-brian-redd" target="_blank">
+									<img class="img-fluid" src="img/logo_visualcv.svg" alt="Via VisualCV">
+								</a>
+							</div>
+							<div class="col-6 col-sm-4">
+								<a href="http://rbrianredd.com/supplemental/R_Brian Redd_visualcv_resume.pdf" target="_blank">
+									<img class="img-fluid" style="max-height: 50px" src="img/icon_pdf.png" alt="Download PDF">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lookdown-section col-12 row">
+					<a href="#work"><span class="fa fa-2x fa-chevron-down"></span></a>
+				</div>
+			</section>
+		</div>
+		
+		<!--Work Projects-->
+		<hr/>
+		<div class="container" id="work">
+			<section class="row row-content inview" data-background-color="2">
+				<div class="lookdown-section col-12 row">
+					<a href="#about"><span class="fa fa-2x fa-chevron-up"></span></a>
+				</div>
+				<div class="col-12 row">
+					<h2>Professional Projects and Information</h2>
+				</div>
+				<div class="col-12 row">
+					<div class="col-11 offset-1">
+						<p>For over fifteen years, I've been an employee of Olive Software, providing PDF to XML conversion, digital replica editions, and archiving to publishers and libraries around the world. Starting in 2002 as the fourth US employee, I initially traveled the world training clients on our "XMD" software and setting them up with self-hosted Olive servers. Now, Olive is primarily a SaaS provider, and I implement and support Olive's hosted clients with their digital editions, as well as continue to support the few self-hosted clients we have. Below are some highlights of my work at Olive:</p>
+					</div>
+					<div class="col-11 offset-1">
+						<div class="row">
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a href="http://www.olivesoftware.com" target="_new">
+										<img class="img-fluid" src="img/port_olive_thumb.png" alt="Olive Software"/>
+										<div class="overlay hidden-xs-down">Olive Software</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_qaa">
+										<img class="img-fluid" src="img/Port_QAA_thumb.png" alt="QA Authenticator"/>
+										<div class="overlay hidden-xs-down">QA Authenticator</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_usa">
+										<img class="img-fluid" src="img/Port_USA_thumb.png" alt="USA Today Digital Edition"/>
+										<div class="overlay hidden-xs-down">USA Today E-Edition</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_iom">
+										<img class="img-fluid" src="img/Port_IOM_thumb.png" alt="Isle of Man Archive"/>
+										<div class="overlay hidden-xs-down">Isle of Man Archive</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_snl">
+										<img class="img-fluid" src="img/Port_SNL_thumb.png" alt="Swiss National Library Archive"/>
+										<div class="overlay hidden-xs-down">Swiss National Library</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_ctc">
+										<img class="img-fluid" src="img/Port_CTC_thumb.png" alt="Chicago Tribune Digital Edition"/>
+										<div class="overlay hidden-xs-down">Chicago Tribune</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-11 offset-1 pt-3">
+						<h5>In addtion to my work with Olive, I have also completed many other professional-grade web development projects:</h5>
+					</div>
+					<div class="col-11 offset-1">
+						<div class="row">
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_rbr">
+										<img class="img-fluid" src="img/port_rbrc_thumb.png" alt="R Brian Redd.com v1"/>
+										<div class="overlay hidden-xs-down">RBrianRedd.com v1</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_rrt">
+										<img class="img-fluid" src="img/Port_RRT_thumb.png" alt="Coding Challenge"/>
+										<div class="overlay hidden-xs-down">PSD to Web</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#port_opinicus">
+										<img class="img-fluid" src="img/Port_opinicus_thumb.png" alt="Opincius Soaps"/>
+										<div class="overlay hidden-xs-down">Opinicus Soaps</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lookdown-section col-12 row">
+					<a href="#play"><span class="fa fa-2x fa-chevron-down"></span></a>
+				</div>
+			</section>
+		</div>
+		
+		<!--Personal Projects-->
+		<hr/>
+		<div class="container" id="play">
+			<section class="row row-content inview" data-background-color="3">
+				<div class="lookdown-section col-12 row">
+					<a href="#work"><span class="fa fa-2x fa-chevron-up"></span></a>
+				</div>
+				<div class="col-12 row">
+					<h2>Personal Projects</h2>
+				</div>
+				<div class="col-12 row">
+					<div class="col-11 offset-1">
+						<h5>Here is a sampling of personal web design projects I've undertaken:</h5>
+					</div>
+					<div class="col-11 offset-1">
+						<div class="row">
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#pers_zane">
+										<img class="img-fluid" src="img/pers_zane_thumb.png" alt="Zane's Tower"/>
+										<div class="overlay hidden-xs-down">Zane's Tower</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#pers_lyr">
+										<img class="img-fluid" src="img/pers_lyr_thumb.png" alt="Moons of Lyr"/>
+										<div class="overlay hidden-xs-down">Moons of Lyr</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-6 col-md-4 p-1">
+								<div class="imgholder">
+									<a data-toggle="modal" data-target="#pers_robo">
+										<img class="img-fluid" src="img/pers_robo_thumb.png" alt="RoboRally"/>
+										<div class="overlay hidden-xs-down">RoboRally Online</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="lookdown-section col-12 row">
+					<a href="#contact"><span class="fa fa-2x fa-chevron-down"></span></a>
+				</div>
+			</section>
+		</div>
+		
+		<!--Contact Me-->
+		<hr/>
+		<div class="container" id="contact">
+			<section class="row row-content inview" data-background-color="0">
+				<div class="lookdown-section col-12 row">
+					<a href="#play"><span class="fa fa-2x fa-chevron-up"></span></a>
+				</div>
+				<div class="col-12 row">
+					<h2>Contact Me!</h2>
+				</div>
+				<div class="col-12 row">
+					<h4>Thank you for your interest! Please fill out the below form and I'll be happy to get back to you regarding anything I can help you with.</h4>
+				</div>
+				<div class="col-12 mt-3 card">
+					<form class="mt-3" id="contactform" action="https://formspree.io/me@rbrianredd.com" method="POST">
+						<div class="form-group row">
+							<label for="name" class="col-12 col-md-3 col-form-label">What's your name?*</label>
+							<div class="col-12 col-md-9">
+								<input type="text" class="form-control" id="name" name="name" placeholder="First and Last Name" required>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="company" class="col-12 col-md-3 col-form-label">Who are you with?</label>
+							<div class="col-12 col-md-9">
+								<input type="text" class="form-control" id="company" name="company" placeholder="Company">
+							</div>
+						</div>
+						<div class="form-group row form-purpose">
+							<label for="purpose" class="col-12 col-md-3 col-form-label">How can I help?</label>
+							<div class="col-12 col-md-9">
+								<select class="form-control" name="purpose">
+									<option value="unspecified"></option>
+									<option value="freelance">I wish to hire you freelance for a project</option>
+									<option value="resume">I am interested in you for a permanent position</option>
+									<option value="praise">I like your website!</option>
+									<option value="other">Something else is on my mind</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row form-details">
+							<label for="details" class="col-12 col-md-3 col-form-label">Tell me about it!</label>
+							<div class="col-12 col-md-9">
+								<textarea class="form-control" id="details" name="details" rows="6"></textarea>
+							</div>
+						</div>
+						<div class="form-group row form-contact">
+							<label for="contactmethod" class="col-6 col-md-3 col-form-label">How should I contact you?</label>
+							<div class="col-6 col-md-3">
+								<select class="form-control" name="contactmethod">
+									<option value="email">Email</option>
+									<option value="telephone">Telephone</option>
+								</select>
+							</div>
+							<label for="emailid" class="col-6 col-md-2 col-form-label cm_email">Email Address*</label>
+							<div class="col-6 col-md-4 cm_email">
+								<input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email@Address.dom" required>
+							</div>
+							<label for="telnum" class="col-6 col-md-2 col-form-label cm_tel">Telephone Number*</label>
+							<div class="col-6 col-md-4 cm_tel">
+								<input type="tel" class="form-control" id="telnum" name="telnum" placeholder="(000) 000-0000">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="whencontact" class="col-12 col-md-3 col-form-label">When should I contact you?</label>
+							<div class="col-12 col-md-9">
+								<input type="text" class="form-control" id="whencontact" name="whencontact" placeholder="ASAP, between 8am - 5pm, etc">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="website" class="col-12 col-md-3 col-form-label">What's your Website?</label>
+							<div class="col-12 col-md-9">
+								<input type="text" class="form-control" id="website" name="website" placeholder="http://www.uberwidget.awe/some">
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="offset-3 col-10">
+								<button type="submit" value="send" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="lookdown-section col-12 row">
+					<a href="#top"><span class="fa fa-2x fa-chevron-up"></span></a>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="container">
+			<div class="row row-content">
+				<div class="col-12">
+					<p>Copyright <i class="fa fa-copyright"></i> 2018 R. Brian Redd - <a href="http://www.rbrianredd.com">rbrianredd.com</a></br>
+					<span>HTML5 | CSS3 | JavaScript | jQuery | Bootstrap | UI/UX | Front-End Developer</span></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- SCRIPTS -->
+	<!-- build:js js/main.js -->
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/tether/dist/js/tether.min.js"></script>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="node_modules/in-view/dist/in-view.min.js"></script>
+	<script src="node_modules/smoothscroll/smoothscroll.min.js"></script>
+	<script src="js/modernizr.custom.97074.js"></script>
+	<script src="js/jquery.hoverdir.js"></script>
+	<script src="js/gryphonMove.js"></script>
+	<script src="js/scripts.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

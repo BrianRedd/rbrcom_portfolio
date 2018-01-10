@@ -1,0 +1,353 @@
+/*--------------------------------------------------------
+* Filename: styles.scss
+* Description: General sassy styles for RBrianRedd.com site
+
+* Author: R. Brian Redd 
+--------------------------------------------------------*/
+/*Sass Variables*/
+/*Fonts*/
+@font-face {
+  font-family: "YearSupplyOfFairyCakes";
+  src: url("../fonts/YEARSUPPLYOFFAIRYCAKES.ttf"); }
+
+/*Bootstrap Updates*/
+.btn-primary {
+  background-color: #006A5C;
+  border-color: #006A5C;
+  opacity: 0.8; }
+
+.btn-primary:hover {
+  background-color: #006A5C;
+  border-color: #006A5C;
+  opacity: 1; }
+
+/*Main CSS*/
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  position: relative;
+  background-color: #5E5EAF;
+  transition: 1.0s;
+  overflow-x: hidden; }
+
+a {
+  color: #FFF;
+  text-decoration: none; }
+
+a:hover {
+  color: #FFF;
+  text-decoration: none; }
+
+.nowrap {
+  display: inline-block; }
+
+.gryphon {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: url("../img/gryphon_bg.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 90%;
+  transform: scale(1.1);
+  opacity: 0.2; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  color: #FFF; }
+  .main #navbar {
+    position: fixed;
+    height: 100%;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 3; }
+    .main #navbar .gryph-logo {
+      position: absolute;
+      height: 60px;
+      line-height: 60px;
+      width: 60px;
+      background-image: url("../img/gryphon_bg.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 45px;
+      text-align: center;
+      vertical-align: middle;
+      transition: all 0.3s ease-out; }
+      .main #navbar .gryph-logo span {
+        height: 60px;
+        opacity: 0;
+        transition: all 0.3s ease-out; }
+    .main #navbar a.gryph-logo:hover {
+      background-image: none;
+      text-decoration: none; }
+      .main #navbar a.gryph-logo:hover span {
+        opacity: 1; }
+    .main #navbar .main-nav {
+      top: 60px; }
+    .main #navbar .social-nav {
+      bottom: 15px;
+      display: none; }
+      .main #navbar .social-nav a:after {
+        font-size: .8em; }
+    .main #navbar .vertical-nav {
+      text-align: center;
+      position: absolute;
+      width: 60px; }
+      .main #navbar .vertical-nav a {
+        position: relative;
+        line-height: 60px;
+        height: 60px; }
+        .main #navbar .vertical-nav a span {
+          transition: all 0.3s ease-out;
+          font-size: 1.5em;
+          width: 60px;
+          vertical-align: bottom; }
+      .main #navbar .vertical-nav a:after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 60px;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out; }
+      .main #navbar .vertical-nav a:hover span {
+        opacity: 0; }
+      .main #navbar .vertical-nav a:hover:after {
+        opacity: 1; }
+      .main #navbar .vertical-nav a[rel="top"]:after {
+        content: "Top"; }
+      .main #navbar .vertical-nav a[rel="contact"]:after {
+        content: "Contact"; }
+      .main #navbar .vertical-nav a[rel="about"]:after {
+        content: "About"; }
+      .main #navbar .vertical-nav a[rel="work"]:after {
+        content: "Work"; }
+      .main #navbar .vertical-nav a[rel="play"]:after {
+        content: "Play"; }
+      .main #navbar .vertical-nav a[rel="github"]:after {
+        content: "GitHub"; }
+      .main #navbar .vertical-nav a[rel="bitbucket"]:after {
+        content: "BitBucket"; }
+      .main #navbar .vertical-nav a[rel="linkedin"]:after {
+        content: "LinkedIn"; }
+      .main #navbar .vertical-nav a[rel="email"]:after {
+        content: "Email Me"; }
+  .main .landing {
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 100%; }
+    .main .landing .rbr_name,
+    .main .landing .ditibi {
+      text-align: center;
+      font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
+      transition: all 0.3s ease-out; }
+    .main .landing .ditibi:hover {
+      transform: scale(1.1); }
+    .main .landing .row-content:first-of-type {
+      height: 24%; }
+    .main .landing .row-content {
+      height: 16%; }
+    .main .landing .rbr_title {
+      padding-top: 15px;
+      text-align: center; }
+    .main .landing .ditibi {
+      cursor: pointer; }
+
+.lookdown {
+  position: absolute;
+  left: 50%;
+  margin-left: -16px;
+  bottom: 10px;
+  text-align: center; }
+
+.lookdown-section {
+  position: relative;
+  left: 50%;
+  margin-left: -16px;
+  text-align: center; }
+
+#ditibi_modal {
+  position: absolute;
+  top: 50%;
+  height: 50%; }
+  #ditibi_modal .modal-special {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%; }
+    #ditibi_modal .modal-special .modal-content {
+      height: 100%; }
+      #ditibi_modal .modal-special .modal-content .modal-body {
+        padding: 0; }
+
+.bacon_modal .modal-content {
+  max-width: 90%; }
+  .bacon_modal .modal-content .modal-header {
+    background-color: #5E5EAF;
+    color: #FFF; }
+  .bacon_modal .modal-content .modal-body a {
+    color: #5E5EAF;
+    font-weight: bold; }
+  .bacon_modal .modal-content .modal-body a:hover {
+    text-decoration: underline; }
+  .bacon_modal .modal-content .modal-body h4 {
+    padding: 10px;
+    color: #FFF;
+    font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
+    line-height: 1.3em; }
+  .bacon_modal .modal-content .modal-body .thedream {
+    background-color: #006A5C; }
+  .bacon_modal .modal-content .modal-body .thethought {
+    background-color: #7C0044; }
+  .bacon_modal .modal-content .modal-body .thebuild {
+    background-color: #0053A7; }
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+  .carousel .carousel-inner {
+    width: 100%;
+    height: 100%;
+    margin-bottom: -40px; }
+    .carousel .carousel-inner .carousel-item {
+      width: 100%;
+      height: 100%; }
+      .carousel .carousel-inner .carousel-item .carousel-header {
+        font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
+        color: #FFFFFF;
+        padding: 5px;
+        width: 100%;
+        height: 3.0em;
+        transition: 1.0s;
+        cursor: pointer; }
+        .carousel .carousel-inner .carousel-item .carousel-header h3 {
+          text-align: center; }
+      .carousel .carousel-inner .carousel-item .carousel-caption {
+        vertical-align: middle;
+        font-size: 1.2em;
+        font-weight: bold;
+        text-shadow: 0 0 10px #FFF;
+        transition: 1.0s;
+        top: 45px; }
+    .carousel .carousel-inner .uwa_dream {
+      background-image: url("../img/UWA_dreaming.png");
+      background-position: left 30px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      .carousel .carousel-inner .uwa_dream .carousel-caption {
+        padding-left: 25%; }
+    .carousel .carousel-inner .uwa_think {
+      background-image: url("../img/UWA_thinking.png");
+      background-position: left 30px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      .carousel .carousel-inner .uwa_think .carousel-caption {
+        padding-left: 15%; }
+    .carousel .carousel-inner .uwa_build {
+      background-image: url("../img/UWA_building.png");
+      background-position: right 30px;
+      background-size: contain;
+      background-repeat: no-repeat; }
+      .carousel .carousel-inner .uwa_build .carousel-caption {
+        padding-right: 15%; }
+  .carousel .carousel-indicators {
+    bottom: -15px;
+    transition: 1.0s; }
+    .carousel .carousel-indicators li {
+      border-radius: 10px;
+      max-width: 10px;
+      height: 10px;
+      border-width: 1px;
+      border-style: solid; }
+  .carousel .carousel-control-next,
+  .carousel .carousel-control-prev {
+    top: 45px; }
+
+.gryph_mask {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  background-color: #FFF;
+  background-image: url("../img/gryphon_bk_mask.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto 100%; }
+
+.bacon {
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #FFF;
+  z-index: -1; }
+  .bacon a:hover {
+    text-decoration: underline; }
+  .bacon .container {
+    background: transparent; }
+  .bacon hr {
+    border-width: 3px; }
+  .bacon #about .resume div {
+    text-align: center; }
+    .bacon #about .resume div a:hover {
+      opacity: 0.5; }
+  .bacon #contact #contactform {
+    color: #000; }
+    .bacon #contact #contactform .form-details,
+    .bacon #contact #contactform .cm_tel {
+      display: none; }
+  .bacon .imgholder {
+    overflow: hidden; }
+    .bacon .imgholder a {
+      cursor: pointer;
+      display: block;
+      position: relative; }
+    .bacon .imgholder img {
+      display: block;
+      position: relative;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: all 0.3s ease-out;
+      opacity: 0.9; }
+    .bacon .imgholder .overlay {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.5);
+      width: 100%;
+      height: 30%;
+      margin-top: 30%;
+      color: #000;
+      padding-top: 8%;
+      text-align: center;
+      font-weight: bold; }
+  .bacon .imgholder:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transform: scale(1.2);
+    opacity: 1; }
+
+footer {
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #FFF;
+  text-align: center; }
+  footer a {
+    color: #FFF;
+    text-decoration: none; }
+  footer a:hover {
+    color: #FFF;
+    text-decoration: underline; }
+  footer span {
+    font-size: 0.7em; }
+
+/*Media Queries*/
+@media screen and (min-height: 570px) {
+  .main #navbar .social-nav {
+    display: block; } }
