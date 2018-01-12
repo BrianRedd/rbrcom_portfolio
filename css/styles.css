@@ -10,17 +10,6 @@
   font-family: "YearSupplyOfFairyCakes";
   src: url("../fonts/YEARSUPPLYOFFAIRYCAKES.ttf"); }
 
-/*Bootstrap Updates*/
-.btn-primary {
-  background-color: #006A5C;
-  border-color: #006A5C;
-  opacity: 0.8; }
-
-.btn-primary:hover {
-  background-color: #006A5C;
-  border-color: #006A5C;
-  opacity: 1; }
-
 /*Main CSS*/
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -66,11 +55,12 @@ a:hover {
   overflow: hidden;
   color: #FFF; }
   .main #navbar {
-    position: fixed;
+    position: fixed !important;
+    -webkit-transform: translate3d(0, 0, 0);
     height: 100%;
     width: 60px;
     background-color: rgba(255, 255, 255, 0.2);
-    z-index: 3; }
+    z-index: 10; }
     .main #navbar .gryph-logo {
       position: absolute;
       height: 60px;
@@ -130,29 +120,16 @@ a:hover {
         content: "Contact"; }
       .main #navbar .vertical-nav a[rel="about"]:after {
         content: "About"; }
-      .main #navbar .vertical-nav a[rel="work"]:after {
-        content: "Work"; }
-      .main #navbar .vertical-nav a[rel="play"]:after {
-        content: "Play"; }
-      .main #navbar .vertical-nav a[rel="github"]:after {
-        content: "GitHub"; }
-      .main #navbar .vertical-nav a[rel="bitbucket"]:after {
-        content: "BitBucket"; }
-      .main #navbar .vertical-nav a[rel="linkedin"]:after {
-        content: "LinkedIn"; }
       .main #navbar .vertical-nav a[rel="email"]:after {
         content: "Email Me"; }
   .main .landing {
     padding-left: 60px;
     padding-right: 60px;
     height: 100%; }
-    .main .landing .rbr_name,
-    .main .landing .ditibi {
+    .main .landing .rbr_name {
       text-align: center;
       font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
       transition: all 0.3s ease-out; }
-    .main .landing .ditibi:hover {
-      transform: scale(1.1); }
     .main .landing .row-content:first-of-type {
       height: 24%; }
     .main .landing .row-content {
@@ -160,56 +137,6 @@ a:hover {
     .main .landing .rbr_title {
       padding-top: 15px;
       text-align: center; }
-    .main .landing .ditibi {
-      cursor: pointer; }
-
-.lookdown {
-  position: absolute;
-  left: 50%;
-  margin-left: -16px;
-  bottom: 10px;
-  text-align: center; }
-
-.lookdown-section {
-  position: relative;
-  left: 50%;
-  margin-left: -16px;
-  text-align: center; }
-
-#ditibi_modal {
-  position: absolute;
-  top: 50%;
-  height: 50%; }
-  #ditibi_modal .modal-special {
-    margin: 0 auto;
-    width: 80%;
-    height: 80%; }
-    #ditibi_modal .modal-special .modal-content {
-      height: 100%; }
-      #ditibi_modal .modal-special .modal-content .modal-body {
-        padding: 0; }
-
-.bacon_modal .modal-content {
-  max-width: 90%; }
-  .bacon_modal .modal-content .modal-header {
-    background-color: #5E5EAF;
-    color: #FFF; }
-  .bacon_modal .modal-content .modal-body a {
-    color: #5E5EAF;
-    font-weight: bold; }
-  .bacon_modal .modal-content .modal-body a:hover {
-    text-decoration: underline; }
-  .bacon_modal .modal-content .modal-body h4 {
-    padding: 10px;
-    color: #FFF;
-    font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
-    line-height: 1.3em; }
-  .bacon_modal .modal-content .modal-body .thedream {
-    background-color: #006A5C; }
-  .bacon_modal .modal-content .modal-body .thethought {
-    background-color: #7C0044; }
-  .bacon_modal .modal-content .modal-body .thebuild {
-    background-color: #0053A7; }
 
 .carousel {
   position: absolute;
@@ -239,27 +166,6 @@ a:hover {
         text-shadow: 0 0 10px #FFF;
         transition: 1.0s;
         top: 45px; }
-    .carousel .carousel-inner .uwa_dream {
-      background-image: url("../img/UWA_dreaming.png");
-      background-position: left 30px;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      .carousel .carousel-inner .uwa_dream .carousel-caption {
-        padding-left: 25%; }
-    .carousel .carousel-inner .uwa_think {
-      background-image: url("../img/UWA_thinking.png");
-      background-position: left 30px;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      .carousel .carousel-inner .uwa_think .carousel-caption {
-        padding-left: 15%; }
-    .carousel .carousel-inner .uwa_build {
-      background-image: url("../img/UWA_building.png");
-      background-position: right 30px;
-      background-size: contain;
-      background-repeat: no-repeat; }
-      .carousel .carousel-inner .uwa_build .carousel-caption {
-        padding-right: 15%; }
   .carousel .carousel-indicators {
     bottom: -15px;
     transition: 1.0s; }
@@ -273,6 +179,19 @@ a:hover {
   .carousel .carousel-control-prev {
     top: 45px; }
 
+.lookdown {
+  position: absolute;
+  left: 50%;
+  margin-left: -16px;
+  bottom: 10px;
+  text-align: center; }
+
+.lookdown-section {
+  position: relative;
+  left: 50%;
+  margin-left: -16px;
+  text-align: center; }
+
 .gryph_mask {
   width: 100%;
   position: absolute;
@@ -283,6 +202,22 @@ a:hover {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: auto 100%; }
+
+.bacon_modal .modal-content {
+  max-width: 90%; }
+  .bacon_modal .modal-content .modal-header {
+    background-color: #5E5EAF;
+    color: #FFF; }
+  .bacon_modal .modal-content .modal-body a {
+    color: #5E5EAF;
+    font-weight: bold; }
+  .bacon_modal .modal-content .modal-body a:hover {
+    text-decoration: underline; }
+  .bacon_modal .modal-content .modal-body h4 {
+    padding: 10px;
+    color: #FFF;
+    font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
+    line-height: 1.3em; }
 
 .bacon {
   padding-left: 60px;
@@ -295,15 +230,6 @@ a:hover {
     background: transparent; }
   .bacon hr {
     border-width: 3px; }
-  .bacon #about .resume div {
-    text-align: center; }
-    .bacon #about .resume div a:hover {
-      opacity: 0.5; }
-  .bacon #contact #contactform {
-    color: #000; }
-    .bacon #contact #contactform .form-details,
-    .bacon #contact #contactform .cm_tel {
-      display: none; }
   .bacon .imgholder {
     overflow: hidden; }
     .bacon .imgholder a {

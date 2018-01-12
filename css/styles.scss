@@ -7,9 +7,6 @@
 
 /*Sass Variables*/
 $defaultbg: #5E5EAF;
-$dreamit: #006A5C;
-$thinkit: #7C0044;
-$buildit: #0053A7;
 $mainrowheight: 16%;
 $navwidth: 60px;
 
@@ -33,20 +30,6 @@ $navwidth: 60px;
 @font-face {
 	font-family: "YearSupplyOfFairyCakes";
 	src: url("../fonts/YEARSUPPLYOFFAIRYCAKES.ttf");
-}
-
-/*Bootstrap Updates*/
-
-.btn-primary {
-	background-color: $dreamit;
-	border-color: $dreamit;
-	opacity: 0.8;
-}
-	
-.btn-primary:hover {
-	background-color: $dreamit;
-	border-color: $dreamit;
-	opacity: 1;
 }
 
 /*Main CSS*/
@@ -98,11 +81,12 @@ a:hover {
 	overflow: hidden;
 	color: #FFF;
 	#navbar {
-		position: fixed;
+		position: fixed!important;
+		-webkit-transform: translate3d(0,0,0);
 		height: 100%;
 		width: $navwidth;
 		background-color: rgba(255,255,255,0.2);
-		z-index: 3;
+		z-index: 10;
 		.gryph-logo{
 			position: absolute;
 			height: 60px;
@@ -177,21 +161,6 @@ a:hover {
 			a[rel="about"]:after {
 				content: "About";
 			}
-			a[rel="work"]:after {
-				content: "Work";
-			}
-			a[rel="play"]:after {
-				content: "Play";
-			}
-			a[rel="github"]:after {
-				content: "GitHub";
-			}
-			a[rel="bitbucket"]:after {
-				content: "BitBucket";
-			}
-			a[rel="linkedin"]:after {
-				content: "LinkedIn";
-			}
 			a[rel="email"]:after {
 				content: "Email Me";
 			}
@@ -201,14 +170,10 @@ a:hover {
 	.landing {
 		@include navpad;
 		height: 100%;
-		.rbr_name,
-		.ditibi {
+		.rbr_name {
 			text-align: center;
 			font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
 			transition: all 0.3s ease-out;
-		}
-		.ditibi:hover {
-			transform: scale(1.1);
 		}
 		.row-content:first-of-type {
 			height: $mainrowheight * 1.5;
@@ -221,74 +186,6 @@ a:hover {
 		.rbr_title {
 			padding-top: 15px;
 			text-align: center;
-		}
-		
-		.ditibi {
-			cursor: pointer;
-		}
-	}
-}
-
-.lookdown {
-	position: absolute;
-	left: 50%;
-	margin-left: -16px;
-	bottom: 10px;
-	text-align: center;
-}
-
-.lookdown-section {
-	position: relative;
-	left: 50%;
-	margin-left: -16px;
-	text-align: center;
-}
-
-#ditibi_modal {
-	position: absolute;
-	top: 50%;
-	height: 50%;
-	.modal-special {
-		@include modalwidth;
-		.modal-content {
-			height: 100%;
-			.modal-body {
-				padding: 0;
-			}
-		}
-	}
-}
-
-.bacon_modal {
-	.modal-content {
-		max-width: 90%;
-		.modal-header {
-			background-color: $defaultbg;
-			color: #FFF;
-		}
-		.modal-body {
-			a {
-				color: $defaultbg;
-				font-weight: bold;
-			}
-			a:hover {
-				text-decoration: underline;
-			}
-			h4 {
-				padding: 10px;
-				color: #FFF;
-				font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
-				line-height: 1.3em;
-			}
-			.thedream{
-				background-color: $dreamit;
-			}
-			.thethought{
-				background-color: $thinkit;
-			}
-			.thebuild{
-				background-color: $buildit;
-			}
 		}
 	}
 }
@@ -322,33 +219,6 @@ a:hover {
 				top: 45px;
 			}
 		}
-		.uwa_dream {
-			background-image: url("../img/UWA_dreaming.png");
-			background-position: left 30px;
-			background-size: contain;
-			background-repeat: no-repeat;
-			.carousel-caption {
-				padding-left: 25%;
-			}
-		}
-		.uwa_think {
-			background-image: url("../img/UWA_thinking.png");
-			background-position: left 30px;
-			background-size: contain;
-			background-repeat: no-repeat;
-			.carousel-caption {
-				padding-left: 15%;
-			}
-		}
-		.uwa_build {
-			background-image: url("../img/UWA_building.png");
-			background-position: right 30px;
-			background-size: contain;
-			background-repeat: no-repeat;
-			.carousel-caption {
-				padding-right: 15%;
-			}
-		}
 	}
 	.carousel-indicators {
 		bottom: -15px;
@@ -367,6 +237,21 @@ a:hover {
 	}
 }
 
+.lookdown {
+	position: absolute;
+	left: 50%;
+	margin-left: -16px;
+	bottom: 10px;
+	text-align: center;
+}
+
+.lookdown-section {
+	position: relative;
+	left: 50%;
+	margin-left: -16px;
+	text-align: center;
+}
+
 .gryph_mask {
 	width: 100%;
 	position: absolute;
@@ -379,6 +264,31 @@ a:hover {
 	background-size: auto 100%;
 }
 
+.bacon_modal {
+	.modal-content {
+		max-width: 90%;
+		.modal-header {
+			background-color: $defaultbg;
+			color: #FFF;
+		}
+		.modal-body {
+			a {
+				color: $defaultbg;
+				font-weight: bold;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			h4 {
+				padding: 10px;
+				color: #FFF;
+				font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
+				line-height: 1.3em;
+			}
+		}
+	}
+}
+
 .bacon {
 	@include navpad;
 	color: #FFF; 
@@ -388,27 +298,9 @@ a:hover {
 	}
 	.container {
 		background: transparent;
-		//margin-bottom: 100px;
 	}
 	hr {
 		border-width: 3px;
-	}
-	#about {
-		.resume div {
-			text-align: center;
-			a:hover {
-				opacity: 0.5;
-			}
-		}
-	}
-	#contact {
-		#contactform {
-			color: #000;
-			.form-details,
-			.cm_tel {
-				display: none;
-			}
-		}
 	}
 	.imgholder {
 		overflow: hidden;

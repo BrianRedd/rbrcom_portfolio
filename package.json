@@ -13,8 +13,10 @@
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
+    "copyimg": "copyfiles -f img/* dist/img",
     "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin"
+    "build": "npm run clean && npm run copyfonts && npm run imagemin && npm run usemin",
+    "buildnomin": "npm run clean && npm run copyfonts && npm run copyimg && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -41,6 +43,7 @@
     "usemin-cli": "^0.5.1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.2",
     "bootstrap": "^4.0.0-alpha.6"
   }
 }

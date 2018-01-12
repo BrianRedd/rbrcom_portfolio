@@ -1,0 +1,207 @@
+/*--------------------------------------------------------
+* Filename: styles.scss
+* Description: Sassy styles for RBrianRedd.com Portfolio site
+
+* Author: R. Brian Redd 
+--------------------------------------------------------*/
+
+/*Sass Variables*/
+$dreamit: #006A5C;
+$thinkit: #7C0044;
+$buildit: #0053A7;
+
+$mainrowheight: 16%;
+$navwidth: 60px;
+
+@mixin full-size {
+	width: 100%;
+	height: 100%;
+}
+
+@mixin navpad {
+	padding-left: $navwidth;
+	padding-right: $navwidth;
+}
+
+@mixin modalwidth {
+	margin: 0 auto;
+	width: 80%;
+	height: 80%;
+}
+
+/*Bootstrap Updates*/
+
+.btn-primary {
+	background-color: $dreamit;
+	border-color: $dreamit;
+	opacity: 0.8;
+}
+	
+.btn-primary:hover {
+	background-color: $dreamit;
+	border-color: $dreamit;
+	opacity: 1;
+}
+
+/*Main CSS*/
+
+.main {
+	#navbar {
+		.vertical-nav
+		{
+			a[rel="news"]:after {
+				content: "News";
+			}
+			a[rel="work"]:after {
+				content: "Work";
+			}
+			a[rel="play"]:after {
+				content: "Play";
+			}
+			a[rel="github"]:after {
+				content: "GitHub";
+			}
+			a[rel="bitbucket"]:after {
+				content: "BitBucket";
+			}
+			a[rel="linkedin"]:after {
+				content: "LinkedIn";
+			}
+		}
+	}
+	.landing {
+		.ditibi {
+			text-align: center;
+			font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
+			transition: all 0.3s ease-out;
+		}
+		.ditibi:hover {
+			transform: scale(1.1);
+		}
+		.ditibi {
+			cursor: pointer;
+		}
+	}
+}
+
+#ditibi_modal {
+	position: absolute;
+	top: 50%;
+	height: 50%;
+	.modal-special {
+		@include modalwidth;
+		.modal-content {
+			height: 100%;
+			.modal-body {
+				padding: 0;
+			}
+		}
+	}
+}
+
+.carousel {
+	.carousel-inner {
+		.uwa_dream {
+			background-image: url("../img/UWA_dreaming.png");
+			background-position: left 30px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			.carousel-caption {
+				padding-left: 25%;
+			}
+		}
+		.uwa_think {
+			background-image: url("../img/UWA_thinking.png");
+			background-position: left 30px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			.carousel-caption {
+				padding-left: 15%;
+			}
+		}
+		.uwa_build {
+			background-image: url("../img/UWA_building.png");
+			background-position: right 30px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			.carousel-caption {
+				padding-right: 15%;
+			}
+		}
+	}
+}
+
+.bacon_modal {
+	.modal-content {
+		.modal-body {
+			.thedream{
+				background-color: $dreamit;
+			}
+			.thethought{
+				background-color: $thinkit;
+			}
+			.thebuild{
+				background-color: $buildit;
+			}
+		}
+	}
+}
+
+.bacon {
+	#about {
+		.skill-container {
+			display: flex;
+			height: 80px;
+			width: 80px;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid #FFF;
+			flex-shrink: 1;
+			position: relative;
+			transition: all 0.3s ease-out;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			div {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				transition: all 0.3s ease-out;
+			}
+			.expert {
+				background-color: rgba(0,255,0,0.4);
+			}
+			.proficient {
+				background-color: rgba(255,255,0,0.4);
+			}
+			.learning {
+				background-color: rgba(255,0,0,0.4);
+			}
+			img {
+				max-height: 60%;
+				max-width: 60%;
+				z-index:1;
+			}
+		}
+		.skill-container:hover {
+			-webkit-filter: grayscale(0%);
+			filter: grayscale(0%);
+		}
+		.resume div {
+			text-align: center;
+			a:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+	#contact {
+		#contactform {
+			color: #000;
+			.form-details,
+			.cm_tel {
+				display: none;
+			}
+		}
+	}
+}
+

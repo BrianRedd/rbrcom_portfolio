@@ -24,7 +24,10 @@ $(document).ready(function() {
 		$bacon = $(".bacon"), //content below main page
 		$gryphmask = $bacon.find(".gryph_mask"), //lower background image
 		$form = $bacon.find("#contactform"),//contact us form
-		$imgholder = $(".imgholder");//image holder
+		$imgholder = $(".imgholder"),//image holder
+		$skills = $(".skill-container");//skills row
+		
+		var skill = ["Learning","Proficient","Expert"];
 		
 /*
  Loading Sequence
@@ -57,6 +60,14 @@ var gryphPlace = debounce(function() { //places bg image half way off right edge
 
 $(window).resize(function () { //repositions bg image when screen size changes
 	gryphPlace();
+});
+
+$skills.each(function() {
+	var a = $(this).find("img").attr("alt");
+	var dl = parseInt($(this).attr("data-level"));
+	var prep = "<div style='height:" + dl + "%' class='" + skill[Math.ceil(dl/33) - 1].toLowerCase() + "'></div>";
+	$(this).attr("title",a + " at " + dl + "%" + "; " + skill[Math.ceil(dl/33) -1]);
+	$(prep).prependTo($(this));
 });
 
 gryphPlace();//automatically applies upon load
