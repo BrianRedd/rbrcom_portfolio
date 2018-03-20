@@ -11,10 +11,13 @@
   src: url("../fonts/YEARSUPPLYOFFAIRYCAKES.ttf"); }
 
 /*Main CSS*/
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%; }
 
@@ -231,11 +234,15 @@ a:hover {
   .bacon hr {
     border-width: 3px; }
   .bacon .imgholder {
-    overflow: hidden; }
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
     .bacon .imgholder a {
       cursor: pointer;
       display: block;
-      position: relative; }
+      position: relative;
+      width: 100%;
+      height: 100%; }
     .bacon .imgholder img {
       display: block;
       position: relative;
@@ -243,6 +250,25 @@ a:hover {
       filter: grayscale(100%);
       transition: all 0.3s ease-out;
       opacity: 0.9; }
+    .bacon .imgholder .wrap-top {
+      top: 14.5%; }
+    .bacon .imgholder .wrap-left {
+      left: 8%; }
+    .bacon .imgholder .wrap-right {
+      left: -3%; }
+    .bacon .imgholder .wrapper_dt {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-color: transparent;
+      background-image: url("../img/WS_wrapper_DT.png");
+      background-repeat: no-repeat;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      transition: all 0.3s ease-out; }
     .bacon .imgholder .overlay {
       position: absolute;
       background: rgba(255, 255, 255, 0.5);
@@ -258,6 +284,8 @@ a:hover {
     filter: grayscale(0%);
     transform: scale(1.2);
     opacity: 1; }
+  .bacon .imgholder:hover .wrapper_dt {
+    filter: grayscale(0%); }
 
 footer {
   padding-left: 60px;
