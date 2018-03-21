@@ -324,28 +324,6 @@ a:hover {
             transition: all 0.3s ease-out;
             opacity: 0.9;
         }
-        .wrap-top {
-            top: 14.5%;
-        }
-        .wrap-left {
-            left: 8%;
-        }
-        .wrap-right {
-            left: -3%;
-        }
-        .wrapper_dt {
-            position: absolute;
-            @include full-size;
-            top: 0;
-            left: 0;
-            background-size: cover;
-            background-color: transparent;
-            background-image: url('../img/WS_wrapper_DT.png');
-            background-repeat: no-repeat;
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-            transition: all 0.3s ease-out;
-        }
         .overlay {
             position: absolute;
             background: rgba(255, 255, 255, 0.5);
@@ -364,9 +342,6 @@ a:hover {
             filter: grayscale(0%);
             transform: scale(1.2);
             opacity: 1;
-        }
-        .wrapper_dt {
-            filter: grayscale(0%);
         }
     }
 }

@@ -130,6 +130,92 @@
   .bacon #about .resume div a:hover {
     opacity: 0.5; }
 
+.bacon #work .imgholder .wrap-top,
+.bacon #play .imgholder .wrap-top {
+  top: 14.5%; }
+
+.bacon #work .imgholder .wrap-left,
+.bacon #play .imgholder .wrap-left {
+  left: 8%; }
+
+.bacon #work .imgholder .wrap-right,
+.bacon #play .imgholder .wrap-right {
+  left: -3%; }
+
+.bacon #work .imgholder .wrapper_dt,
+.bacon #work .imgholder .wrapper_mobile,
+.bacon #work .imgholder .skill_badge,
+.bacon #play .imgholder .wrapper_dt,
+.bacon #play .imgholder .wrapper_mobile,
+.bacon #play .imgholder .skill_badge {
+  position: absolute;
+  transition: all 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-color: transparent; }
+
+.bacon #work .imgholder .wrapper_dt,
+.bacon #play .imgholder .wrapper_dt {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("../img/WS_wrapper_DT.png"); }
+
+.bacon #work .imgholder .wrapper_mobile,
+.bacon #play .imgholder .wrapper_mobile {
+  height: 83.8%;
+  width: 34.1%;
+  bottom: 0;
+  right: 0;
+  z-index: 0; }
+  .bacon #work .imgholder .wrapper_mobile .wrapper_mobile_phone,
+  .bacon #play .imgholder .wrapper_mobile .wrapper_mobile_phone {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/WS_wrapper_mobile.png");
+    background-size: contain; }
+  .bacon #work .imgholder .wrapper_mobile .wrapper_mobile_screen,
+  .bacon #play .imgholder .wrapper_mobile .wrapper_mobile_screen {
+    position: absolute;
+    height: 84%;
+    width: 93%;
+    left: 2px;
+    bottom: 6%;
+    overflow: hidden;
+    z-index: -1; }
+    .bacon #work .imgholder .wrapper_mobile .wrapper_mobile_screen .wrapper_mobile_img,
+    .bacon #play .imgholder .wrapper_mobile .wrapper_mobile_screen .wrapper_mobile_img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s ease-out;
+      width: 100%;
+      height: 100%; }
+
+.bacon #work .imgholder .skill_badge,
+.bacon #play .imgholder .skill_badge {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center center; }
+  .bacon #work .imgholder .skill_badge[data="angular"],
+  .bacon #play .imgholder .skill_badge[data="angular"] {
+    background-image: url("../img/skills_angular.png"); }
+
+.bacon #work .imgholder:hover .wrapper_dt,
+.bacon #work .imgholder:hover .skill_badge,
+.bacon #play .imgholder:hover .wrapper_dt,
+.bacon #play .imgholder:hover .skill_badge {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%); }
+
 .bacon #contact #contactform {
   color: #000; }
   .bacon #contact #contactform .form-details,
