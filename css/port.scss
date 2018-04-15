@@ -198,14 +198,45 @@ $navwidth: 60px;
     #work,
     #play {
         .imgholder {
+            overflow: hidden;
+            @include full-size;
+            a {
+                cursor: pointer;
+                display: block;
+                position: relative;
+                @include full-size;
+            }
+            .webpage {
+                top: 16%;
+                left: 8%;
+            }
+            img {
+                display: block;
+                position: relative;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: all 0.3s ease-out;
+                opacity: 0.9;
+            }
+            .overlay {
+                position: absolute;
+                background: rgba(255, 255, 255, 0.5);
+                width: 100%;
+                height: 30%;
+                margin-top: 30%;
+                color: #000;
+                padding-top: 8%;
+                text-align: center;
+                font-weight: bold;
+            }
             .wrap-top {
                 top: 14.5%;
             }
-            .wrap-left {
-                left: 8%;
-            }
             .wrap-right {
                 left: -3%;
+            }
+            .wrap-small {
+                width: 80%;
             }
             .wrapper_dt,
             .wrapper_mobile,
@@ -267,6 +298,12 @@ $navwidth: 60px;
             }
         }
         .imgholder:hover {
+            img {
+                -webkit-filter: grayscale(0%);
+                filter: grayscale(0%);
+                transform: scale(1.1);
+                opacity: 1;
+            }
             .wrapper_dt,
             .skill_badge {
                 -webkit-filter: grayscale(0%);
