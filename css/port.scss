@@ -210,6 +210,10 @@ $navwidth: 60px;
                 top: 16%;
                 left: 8%;
             }
+            .mobileapp {
+                top: 12%;
+                left: 0%;
+            }
             img {
                 display: block;
                 position: relative;
@@ -240,6 +244,7 @@ $navwidth: 60px;
             }
             .wrapper_dt,
             .wrapper_mobile,
+            .wrapper_mobile_lg,
             .skill_badge {
                 position: absolute;
                 transition: all 0.3s ease-out;
@@ -254,6 +259,15 @@ $navwidth: 60px;
                 left: 0;
                 background-size: cover;
                 background-image: url('../img/WS_wrapper_DT.png');
+            }
+            .wrapper_mobile_lg {
+                @include full-size;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                top: 0;
+                left: 0;
+                background-size: cover;
+                background-image: url('../img/WS_wrapper_Mobile_lg.png');
             }
             .wrapper_mobile {
                 height: 83.8%;
@@ -295,6 +309,9 @@ $navwidth: 60px;
                 &[data="angular"] {
                     background-image: url("../img/skills_angular.png");
                 }
+                &[data="ionic"] {
+                    background-image: url("../img/skills_ionic.png");
+                }
             }
         }
         .imgholder:hover {
@@ -305,6 +322,7 @@ $navwidth: 60px;
                 opacity: 1;
             }
             .wrapper_dt,
+            .wrapper_mobile_lg,
             .skill_badge {
                 -webkit-filter: grayscale(0%);
                 filter: grayscale(0%);

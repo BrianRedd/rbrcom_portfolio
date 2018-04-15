@@ -146,6 +146,10 @@
   .bacon #play .imgholder .webpage {
     top: 16%;
     left: 8%; }
+  .bacon #work .imgholder .mobileapp,
+  .bacon #play .imgholder .mobileapp {
+    top: 12%;
+    left: 0%; }
   .bacon #work .imgholder img,
   .bacon #play .imgholder img {
     display: block;
@@ -176,9 +180,11 @@
     width: 80%; }
   .bacon #work .imgholder .wrapper_dt,
   .bacon #work .imgholder .wrapper_mobile,
+  .bacon #work .imgholder .wrapper_mobile_lg,
   .bacon #work .imgholder .skill_badge,
   .bacon #play .imgholder .wrapper_dt,
   .bacon #play .imgholder .wrapper_mobile,
+  .bacon #play .imgholder .wrapper_mobile_lg,
   .bacon #play .imgholder .skill_badge {
     position: absolute;
     transition: all 0.3s ease-out;
@@ -194,6 +200,16 @@
     left: 0;
     background-size: cover;
     background-image: url("../img/WS_wrapper_DT.png"); }
+  .bacon #work .imgholder .wrapper_mobile_lg,
+  .bacon #play .imgholder .wrapper_mobile_lg {
+    width: 100%;
+    height: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-image: url("../img/WS_wrapper_Mobile_lg.png"); }
   .bacon #work .imgholder .wrapper_mobile,
   .bacon #play .imgholder .wrapper_mobile {
     height: 83.8%;
@@ -237,6 +253,9 @@
     .bacon #work .imgholder .skill_badge[data="angular"],
     .bacon #play .imgholder .skill_badge[data="angular"] {
       background-image: url("../img/skills_angular.png"); }
+    .bacon #work .imgholder .skill_badge[data="ionic"],
+    .bacon #play .imgholder .skill_badge[data="ionic"] {
+      background-image: url("../img/skills_ionic.png"); }
 
 .bacon #work .imgholder:hover img,
 .bacon #play .imgholder:hover img {
@@ -246,8 +265,10 @@
   opacity: 1; }
 
 .bacon #work .imgholder:hover .wrapper_dt,
+.bacon #work .imgholder:hover .wrapper_mobile_lg,
 .bacon #work .imgholder:hover .skill_badge,
 .bacon #play .imgholder:hover .wrapper_dt,
+.bacon #play .imgholder:hover .wrapper_mobile_lg,
 .bacon #play .imgholder:hover .skill_badge {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%); }
