@@ -275,6 +275,9 @@ a:hover {
         .modal-header {
             background-color: $defaultbg;
             color: #FFF;
+            button {
+                margin: 5px;
+            }
         }
         .modal-body {
             a {

@@ -150,6 +150,25 @@ $navwidth: 60px;
 
 .bacon {
     #about {
+        .imgholder {
+            overflow: hidden;
+            img {
+                display: block;
+                position: relative;
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+                transition: all 0.3s ease-out;
+                opacity: 0.9;
+            }
+            &:hover {
+                img {
+                    -webkit-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                    transform: scale(1.1);
+                    opacity: 1;
+                }
+            }
+        }
         .skill-container {
             display: flex;
             height: 80px;
@@ -288,6 +307,7 @@ $navwidth: 60px;
                     bottom: 6%;
                     overflow: hidden;
                     z-index: -1;
+                    background-color: #FFF;
                     .wrapper_mobile_img {
                         position: absolute;
                         top: 0;
@@ -311,6 +331,9 @@ $navwidth: 60px;
                 }
                 &[data="ionic"] {
                     background-image: url("../img/skills_ionic.png");
+                }
+                &[data="nativescript"] {
+                    background-image: url("../img/skills_NativeScript.png");
                 }
             }
         }

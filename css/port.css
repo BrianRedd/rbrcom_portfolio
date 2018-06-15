@@ -92,6 +92,21 @@
 .bacon_modal .modal-content .modal-body .thebuild {
   background-color: #0053A7; }
 
+.bacon #about .imgholder {
+  overflow: hidden; }
+  .bacon #about .imgholder img {
+    display: block;
+    position: relative;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all 0.3s ease-out;
+    opacity: 0.9; }
+  .bacon #about .imgholder:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    opacity: 1; }
+
 .bacon #about .skill-container {
   display: flex;
   height: 80px;
@@ -231,7 +246,8 @@
       left: 2px;
       bottom: 6%;
       overflow: hidden;
-      z-index: -1; }
+      z-index: -1;
+      background-color: #FFF; }
       .bacon #work .imgholder .wrapper_mobile .wrapper_mobile_screen .wrapper_mobile_img,
       .bacon #play .imgholder .wrapper_mobile .wrapper_mobile_screen .wrapper_mobile_img {
         position: absolute;
@@ -256,6 +272,9 @@
     .bacon #work .imgholder .skill_badge[data="ionic"],
     .bacon #play .imgholder .skill_badge[data="ionic"] {
       background-image: url("../img/skills_ionic.png"); }
+    .bacon #work .imgholder .skill_badge[data="nativescript"],
+    .bacon #play .imgholder .skill_badge[data="nativescript"] {
+      background-image: url("../img/skills_NativeScript.png"); }
 
 .bacon #work .imgholder:hover img,
 .bacon #play .imgholder:hover img {

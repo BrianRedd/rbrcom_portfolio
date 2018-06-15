@@ -262,7 +262,7 @@
                     <h4 class="modal-title">Chicago Tribune Replica Edition Redesign</h4>
                     <a href="http://rbrianredd.com/projects/CTC_CaseStudy/" target="_blank">
                         <button type="button" class="close">
-                            <span class="fa fa-sticky-note text-white"></span>
+                            <span class="fa fa-file text-white"></span>
                         </button>
                     </a>
                     <button type="button" class="close" data-dismiss="modal">
@@ -331,24 +331,25 @@
 					</button>
                 </div>
                 <div class="modal-body">
-                    <h4 class="thedream">The Dream: Initial build of my personal/professional website</h5>
-                        <p>After studying HTML5, CSS3, and jQuery, in 2011 it was time for me to build my own website. I wanted to showcase my technical and design skills, as well as build a site that was unique. While I remain proud of "version 1" of rbrianredd.com,
-                            the navigation is non-intuitive, and many aspects of it are now dated.</p>
-                        <p>NOTE: This was pre-Bootstrap, so the carousels that are in place were coded by scratch in jQuery.</p>
-                        <h4 class="thethought">The Thought Process: Challenges</h4>
-                        <p>Along with the aforementioned manually coded carousels (I built my own carousel prototype and reused), the original <a href="http://rbrianredd.com/v1" target="_blank">rbrianredd.com</a> contains many CSS3 effects to provide movement,
-                            and heavy use of jQuery to provide navigation (mousing over the five icons around the central gryphon will display menu detail, and clicking will open a modal, also manually encoded). The page makes heavy use of iFrames to
-                            access multiple pages within the site's structure.</p>
-                        <p>While initially I intended to make the site responsive, this never came about (until the advent of version 2 of the site).</p>
-                        <h4 class="thebuild">The Build:</h4>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <a href="http://www.rbrianredd.com/v1" target="_blank"><img class="img-fluid" src="img/Port_rbrc_full.png"></a>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <p>This site suited me well for several years, until my studies of Bootstrap, and more advanced JavaScript libraries/frameworks (Angular, React, etc) prompted me to revisit it; thus the current redesign.</p>
-                            </div>
+                    <h4 class="thedream">The Dream</h4>
+                    <h5>Initial build of my personal/professional website</h5>
+                    <p>After studying HTML5, CSS3, and jQuery, in 2011 it was time for me to build my own website. I wanted to showcase my technical and design skills, as well as build a site that was unique. While I remain proud of "version 1" of rbrianredd.com,
+                        the navigation is non-intuitive, and many aspects of it are now dated.</p>
+                    <p>NOTE: This was pre-Bootstrap, so the carousels that are in place were coded by scratch in jQuery.</p>
+                    <h4 class="thethought">The Thought Process: Challenges</h4>
+                    <p>Along with the aforementioned manually coded carousels (I built my own carousel prototype and reused), the original <a href="http://rbrianredd.com/v1" target="_blank">rbrianredd.com</a> contains many CSS3 effects to provide movement,
+                        and heavy use of jQuery to provide navigation (mousing over the five icons around the central gryphon will display menu detail, and clicking will open a modal, also manually encoded). The page makes heavy use of iFrames to access
+                        multiple pages within the site's structure.</p>
+                    <p>While initially I intended to make the site responsive, this never came about (until the advent of version 2 of the site).</p>
+                    <h4 class="thebuild">The Build:</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <a href="http://www.rbrianredd.com/v1" target="_blank"><img class="img-fluid" src="img/Port_rbrc_full.png"></a>
                         </div>
+                        <div class="col-12 col-md-6">
+                            <p>This site suited me well for several years, until my studies of Bootstrap, and more advanced JavaScript libraries/frameworks (Angular, React, etc) prompted me to revisit it; thus the current redesign.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -517,6 +518,105 @@
                             <a href="http://www.rbrianredd.com/projects/opinicussoaps" target="blank"><img class="img-fluid" src="img/Port_opinicus_full.png"></a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_taskit">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">TaskIT Personal Task Manager Ionic 2 App</h4>
+                    <a href="https://github.com/BrianRedd/TaskIt" target="_blank">
+                        <button type="button" class="close">
+                            <span class="fa fa-github text-white"></span>
+                        </button>
+                    </a>
+                    <a href="/Documents/Final_Report-TASKIT_Personal_Task_Manager.pdf" target="_blank">
+                        <button type="button" class="close">
+                            <span class="fa fa-file text-white"></span>
+                        </button>
+                    </a>
+                    <a href="/app_builds/TaskIt/app-debug.zip" target="_blank">
+                        <button type="button" class="close">
+                            <span class="fa fa-android text-white"></span>
+                        </button>
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="thedream">The Dream:</h4>
+                    <h5>Create a simple personal task manager app using Ionic 2 and Angular</h5>
+                    <p>In order to learn Ionic 2 (and to help me stay organized), I decided to build a simple Ionic 2-based task manager app, using device local storage to store tasks as JSON objects. The app has a user sign-in, and allows for the creation,
+                        editing, and review of tasks.</p>
+                    <h4 class="thethought">The Thought Process: Challenges</h4>
+                    <p>Even though this app was initially built for local use only, the login component was essential for future development, where the data will be stored on a server. Using Angular's modular architecture and services, I was able to create
+                        a unique task data store for each user. While the initial app build uses local storage, the modular design will allow for a relatively easy transition to server-based data store using MongoDB or Couchbase, and the JSON data design
+                        insures that each user's data will remain separate and unique.</p>
+                    <h4 class="thebuild">The Build:</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid" src="img/Port_TaskIT_screenie.png">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>The primary screen displays the next due task and the next due high priority task. Left-rail navigation allows users to go the Tasks page (which lists all active tasks), create New Tasks, and review Completed Tasks. Users can
+                                also edit tasks and clone tasks. Tasks themselves are have a title, description, scheduled date, priority, category, and flag for recurrences (which will automatically clone a task once complete). In addition, each task
+                                has an array of list items available (useful for shopping lists and the such) which can be completed individually.</p>
+                        </div>
+                    </div>
+                    <p>Because of the number of task manager apps available, I have no plans at this time to release this into any stores (although the <a href="/app_builds/TaskIt/app-debug.apk" target="_blank">adhoc APK</a> is available for anyone interested).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="port_repairit">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">RepairIT Shop Repair Management NativeScript App</h4>
+                    <a href="https://github.com/BrianRedd/RepairIt" target="_blank">
+                        <button type="button" class="close">
+                            <span class="fa fa-github text-white"></span>
+                        </button>
+                    </a>
+                    <a href="/Documents/Final_Report-RepairITRepairManager.pdf" target="_blank">
+                        <button type="button" class="close">
+                            <span class="fa fa-file text-white"></span>
+                        </button>
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="thedream">The Dream:</h4>
+                    <h5>Create an app for Renaissance Festival shops to manage product repair orders</h5>
+                    <p>I was contacted by a small shop that makes and repairs hand-made one-of-a-kind puppets at Renaissance Festivals. They travel around the country going to various shows, and needed a way to manage receipt of puppets to be repaired. They
+                        asked for an app that can sit on their employee’s phones that will allow them to take pictures of puppets when they receive them, detail the necessary repairs required, and attach the customer details so that when the repairs are
+                        done, they know exactly who to return them to.</p>
+                    <h4 class="thethought">The Thought Process: Challenges</h4>
+                    <p>While initially built for a single specific customer, RepairIT was designed to be used by any company with similar needs. After an initial setup (where the app pulls specific shop details from an online JSON-server, including branding),
+                        employees will be able to open orders detailing necessary repairs, and then "upload" those orders to the shop owner. The initial build of this app uses the device's native email application to send these orders via email; eventually,
+                        however, this information will also be uploaded to a Node.js server and stored in a MongoDB or Couchbase database.</p>
+                    <h4 class="thebuild">The Build:</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p>When a client returns merchandise for repair, the shop associate will use the RepairIT app to get the client's information, detail the necessary repairs, and use the device's native camera to take pictures of the merchandise;
+                                a unique order ID number will be assigned to each order. Then, once internet is available, the associate will "upload" (initially via email, eventually via REST API) to the shop management team, where these orders can be
+                                monitored from receipt through completion of the repairs and delivery back to the client.</p>
+                            <p>Utilizing NativeScript and Angular, the app levarages the device's native capabilities (such as the camera, email, and local notifications) to allow for orders to be created and sent. Locally, Couchbase Lite is used to store
+                                the orders details, and this will make for an easy integration with a server-based MongoDB or Couchbase database.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid" src="img/Port_RepairIT_screenie.png">
+                        </div>
+                    </div>
+                    <p>This is still a work in progress and has not been released to the customer (as of June, 2018); eventually, however, I plan on releasing this to app stores (freely available but with a nominal set-up fee and a subscription-based data-storage
+                        and management portal service).
+                    </p>
                 </div>
             </div>
         </div>
@@ -830,8 +930,11 @@
                             <div class="skill-container" data-level="50" data-toggle="tooltip" data-html="true" data-placement="top" title="">
                                 <image src="img/skills_ionic.png" alt="Ionic 2">
                             </div>
-                            <div class="skill-container" data-level="10" data-toggle="tooltip" data-html="true" data-placement="top" title="">
+                            <div class="skill-container" data-level="50" data-toggle="tooltip" data-html="true" data-placement="top" title="">
                                 <image src="img/skills_nativescript.png" alt="NativeScript">
+                            </div>
+                            <div class="skill-container" data-level="20" data-toggle="tooltip" data-html="true" data-placement="top" title="">
+                                <image src="img/skills_nodejs.png" alt="Node.js">
                             </div>
                             <!--div class="skill-container" data-level="5" data-toggle="tooltip" data-html="true" data-placement="top" title="">
                                 <image src="img/skills_react.png" alt="React">
@@ -947,16 +1050,22 @@
                         <div class="row">
                             <div class="col-6 col-md-4 p-1">
                                 <div class="imgholder">
-                                    <a data-toggle="modal" data-target="#port_rbr">
-                                        <img class="webpage wrap-right wrap-top img-fluid" src="img/Port_rbrc_full.png" alt="R Brian Redd.com v1" />
-                                        <div class="wrapper_dt"></div>
-                                        <div class="overlay hidden-xs-down">RBrianRedd.com v1</div>
+                                    <a data-toggle="modal" data-target="#port_repairit">
+                                        <img class="mobileapp img-fluid" src="img/Port_RepairIT_app-splash.png" alt="RepairIT Shop Repair Management App" />
+                                        <div class="wrapper_mobile_lg"></div>
+                                        <div class="wrapper_mobile hidden-xs-down">
+                                            <div class="wrapper_mobile_phone"></div>
+                                            <div class="wrapper_mobile_screen">
+                                                <img class="wrapper_mobile_img" src="img/Port_RepairIT_mobile.png" />
+                                            </div>
+                                        </div>
+                                        <div class="skill_badge" data="nativescript" data-toggle="tooltip" data-html="true" data-placement="right" title="Built with NativeScript"></div>
+                                        <div class="overlay hidden-xs-down">RepairIT Shop Repair Management App</div>
                                     </a>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 p-1">
                                 <div class="imgholder">
-                                    <!--20180415: TODO: Add TASKIT Modal (include download instead of link, upload latest APK)-->
                                     <a data-toggle="modal" data-target="#port_taskit">
                                         <img class="mobileapp img-fluid" src="img/Port_TaskIT_app-splash.png" alt="TaskIT Personal Task Manager App" />
                                         <div class="wrapper_mobile_lg"></div>
@@ -984,6 +1093,15 @@
                                         </div>
                                         <div class="skill_badge" data="angular" data-toggle="tooltip" data-html="true" data-placement="right" title="Built with Angular"></div>
                                         <div class="overlay hidden-xs-down">B.I.G. Inc.</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 p-1">
+                                <div class="imgholder">
+                                    <a data-toggle="modal" data-target="#port_rbr">
+                                        <img class="webpage wrap-right wrap-top img-fluid" src="img/Port_rbrc_full.png" alt="R Brian Redd.com v1" />
+                                        <div class="wrapper_dt"></div>
+                                        <div class="overlay hidden-xs-down">RBrianRedd.com v1</div>
                                     </a>
                                 </div>
                             </div>
@@ -1174,7 +1292,7 @@
             <div class="row row-content">
                 <div class="col-12">
                     <p>Copyright <i class="fa fa-copyright"></i> 2018 R. Brian Redd - <a href="http://www.rbrianredd.com">rbrianredd.com</a></br>
-                        <span>HTML5 | CSS3 | JavaScript | jQuery | Bootstrap | UI/UX | Front-End Developer</span></p>
+                        <span>HTML5 | CSS3 | JavaScript | jQuery | Bootstrap | Angular | Ionic | NativeScript | Node.js | UI/UX | Front-End Developer</span></p>
                 </div>
             </div>
         </div>

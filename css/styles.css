@@ -211,6 +211,8 @@ a:hover {
   .bacon_modal .modal-content .modal-header {
     background-color: #5E5EAF;
     color: #FFF; }
+    .bacon_modal .modal-content .modal-header button {
+      margin: 5px; }
   .bacon_modal .modal-content .modal-body a {
     color: #5E5EAF;
     font-weight: bold; }
