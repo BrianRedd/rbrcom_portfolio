@@ -38,6 +38,9 @@ a:hover {
 .nowrap {
   display: inline-block; }
 
+.close {
+  text-shadow: none !important; }
+
 .gryphon {
   width: 100%;
   height: 100%;
@@ -207,7 +210,10 @@ a:hover {
   background-size: auto 100%; }
 
 .bacon_modal .modal-content {
-  max-width: 90%; }
+  max-width: 90%;
+  max-height: 80%;
+  height: 800px;
+  overflow-y: auto; }
   .bacon_modal .modal-content .modal-header {
     background-color: #5E5EAF;
     color: #FFF; }

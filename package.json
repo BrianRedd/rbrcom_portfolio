@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/BrianRedd/rbrcom_portfolio",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "cssmin": "^0.4.3",
     "font-awesome": "^4.7.0",
     "htmlmin": "0.0.7",
