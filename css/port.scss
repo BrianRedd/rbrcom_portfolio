@@ -335,6 +335,9 @@ $navwidth: 60px;
                 &[data="nativescript"] {
                     background-image: url("../img/skills_NativeScript.png");
                 }
+                &[data="react"] {
+                    background-image: url("../img/skills_react.png");
+                }
             }
         }
         .imgholder:hover {

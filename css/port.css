@@ -7,105 +7,132 @@
 /*Sass Variables*/
 /*Bootstrap Updates*/
 .btn-primary {
-  background-color: #006A5C;
-  border-color: #006A5C;
-  opacity: 0.8; }
+  background-color: #006a5c;
+  border-color: #006a5c;
+  opacity: 0.8;
+}
 
 .btn-primary:hover {
-  background-color: #006A5C;
-  border-color: #006A5C;
-  opacity: 1; }
+  background-color: #006a5c;
+  border-color: #006a5c;
+  opacity: 1;
+}
 
 /*Main CSS*/
 .main #navbar .vertical-nav a[rel="news"]:after {
-  content: "News"; }
+  content: "News";
+}
 
 .main #navbar .vertical-nav a[rel="work"]:after {
-  content: "Work"; }
+  content: "Work";
+}
 
 .main #navbar .vertical-nav a[rel="play"]:after {
-  content: "Play"; }
+  content: "Play";
+}
 
 .main #navbar .vertical-nav a[rel="github"]:after {
-  content: "GitHub"; }
+  content: "GitHub";
+}
 
 .main #navbar .vertical-nav a[rel="bitbucket"]:after {
-  content: "BitBucket"; }
+  content: "BitBucket";
+}
 
 .main #navbar .vertical-nav a[rel="linkedin"]:after {
-  content: "LinkedIn"; }
+  content: "LinkedIn";
+}
 
 .main .landing .ditibi {
   text-align: center;
-  font-family: 'YearSupplyOfFairyCakes', 'Arial', sans-serif;
-  transition: all 0.3s ease-out; }
+  font-family: "YearSupplyOfFairyCakes", "Arial", sans-serif;
+  transition: all 0.3s ease-out;
+}
 
 .main .landing .ditibi:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+}
 
 .main .landing .ditibi {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 #ditibi_modal {
   position: absolute;
   top: 50%;
-  height: 50%; }
-  #ditibi_modal .modal-special {
-    margin: 0 auto;
-    width: 80%;
-    height: 80%; }
-    #ditibi_modal .modal-special .modal-content {
-      height: 100%; }
-      #ditibi_modal .modal-special .modal-content .modal-body {
-        padding: 0; }
+  height: 50%;
+}
+#ditibi_modal .modal-special {
+  margin: 0 auto;
+  width: 80%;
+  height: 80%;
+}
+#ditibi_modal .modal-special .modal-content {
+  height: 100%;
+}
+#ditibi_modal .modal-special .modal-content .modal-body {
+  padding: 0;
+}
 
 .carousel .carousel-inner .uwa_dream {
   background-image: url("../img/UWA_dreaming.png");
   background-position: left 30px;
   background-size: contain;
-  background-repeat: no-repeat; }
-  .carousel .carousel-inner .uwa_dream .carousel-caption {
-    padding-left: 25%; }
+  background-repeat: no-repeat;
+}
+.carousel .carousel-inner .uwa_dream .carousel-caption {
+  padding-left: 25%;
+}
 
 .carousel .carousel-inner .uwa_think {
   background-image: url("../img/UWA_thinking.png");
   background-position: left 30px;
   background-size: contain;
-  background-repeat: no-repeat; }
-  .carousel .carousel-inner .uwa_think .carousel-caption {
-    padding-left: 15%; }
+  background-repeat: no-repeat;
+}
+.carousel .carousel-inner .uwa_think .carousel-caption {
+  padding-left: 15%;
+}
 
 .carousel .carousel-inner .uwa_build {
   background-image: url("../img/UWA_building.png");
   background-position: right 30px;
   background-size: contain;
-  background-repeat: no-repeat; }
-  .carousel .carousel-inner .uwa_build .carousel-caption {
-    padding-right: 15%; }
+  background-repeat: no-repeat;
+}
+.carousel .carousel-inner .uwa_build .carousel-caption {
+  padding-right: 15%;
+}
 
 .bacon_modal .modal-content .modal-body .thedream {
-  background-color: #006A5C; }
+  background-color: #006a5c;
+}
 
 .bacon_modal .modal-content .modal-body .thethought {
-  background-color: #7C0044; }
+  background-color: #7c0044;
+}
 
 .bacon_modal .modal-content .modal-body .thebuild {
-  background-color: #0053A7; }
+  background-color: #0053a7;
+}
 
 .bacon #about .imgholder {
-  overflow: hidden; }
-  .bacon #about .imgholder img {
-    display: block;
-    position: relative;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 0.3s ease-out;
-    opacity: 0.9; }
-  .bacon #about .imgholder:hover img {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    transform: scale(1.1);
-    opacity: 1; }
+  overflow: hidden;
+}
+.bacon #about .imgholder img {
+  display: block;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease-out;
+  opacity: 0.9;
+}
+.bacon #about .imgholder:hover img {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  opacity: 1;
+}
 
 .bacon #about .skill-container {
   display: flex;
@@ -113,175 +140,219 @@
   width: 80px;
   align-items: center;
   justify-content: center;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   flex-shrink: 1;
   position: relative;
   transition: all 0.3s ease-out;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
-  .bacon #about .skill-container div {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    transition: all 0.3s ease-out; }
-  .bacon #about .skill-container .expert {
-    background-color: rgba(0, 255, 0, 0.4); }
-  .bacon #about .skill-container .proficient {
-    background-color: rgba(255, 255, 0, 0.4); }
-  .bacon #about .skill-container .learning {
-    background-color: rgba(255, 0, 0, 0.4); }
-  .bacon #about .skill-container img {
-    max-height: 60%;
-    max-width: 60%;
-    z-index: 1; }
+  filter: grayscale(100%);
+}
+.bacon #about .skill-container div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+.bacon #about .skill-container .expert {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+.bacon #about .skill-container .proficient {
+  background-color: rgba(255, 255, 0, 0.4);
+}
+.bacon #about .skill-container .learning {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+.bacon #about .skill-container img {
+  max-height: 60%;
+  max-width: 60%;
+  z-index: 1;
+}
 
 .bacon #about .skill-container:hover {
   -webkit-filter: grayscale(0%);
-  filter: grayscale(0%); }
+  filter: grayscale(0%);
+}
 
 .bacon #about .resume div {
-  text-align: center; }
-  .bacon #about .resume div a:hover {
-    opacity: 0.5; }
+  text-align: center;
+}
+.bacon #about .resume div a:hover {
+  opacity: 0.5;
+}
 
 .bacon #work .imgholder,
 .bacon #play .imgholder {
   overflow: hidden;
   width: 100%;
-  height: 100%; }
-  .bacon #work .imgholder a,
-  .bacon #play .imgholder a {
-    cursor: pointer;
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%; }
-  .bacon #work .imgholder .webpage,
-  .bacon #play .imgholder .webpage {
-    top: 16%;
-    left: 8%; }
-  .bacon #work .imgholder .mobileapp,
-  .bacon #play .imgholder .mobileapp {
-    top: 12%;
-    left: 0%; }
-  .bacon #work .imgholder img,
-  .bacon #play .imgholder img {
-    display: block;
-    position: relative;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 0.3s ease-out;
-    opacity: 0.9; }
-  .bacon #work .imgholder .overlay,
-  .bacon #play .imgholder .overlay {
-    position: absolute;
-    background: rgba(255, 255, 255, 0.5);
-    width: 100%;
-    height: 30%;
-    margin-top: 30%;
-    color: #000;
-    padding-top: 8%;
-    text-align: center;
-    font-weight: bold; }
-  .bacon #work .imgholder .wrap-top,
-  .bacon #play .imgholder .wrap-top {
-    top: 14.5%; }
-  .bacon #work .imgholder .wrap-right,
-  .bacon #play .imgholder .wrap-right {
-    left: -3%; }
-  .bacon #work .imgholder .wrap-small,
-  .bacon #play .imgholder .wrap-small {
-    width: 80%; }
-  .bacon #work .imgholder .wrapper_dt,
-  .bacon #work .imgholder .wrapper_mobile,
-  .bacon #work .imgholder .wrapper_mobile_lg,
-  .bacon #work .imgholder .skill_badge,
-  .bacon #play .imgholder .wrapper_dt,
-  .bacon #play .imgholder .wrapper_mobile,
-  .bacon #play .imgholder .wrapper_mobile_lg,
-  .bacon #play .imgholder .skill_badge {
-    position: absolute;
-    transition: all 0.3s ease-out;
-    background-repeat: no-repeat;
-    background-color: transparent; }
-  .bacon #work .imgholder .wrapper_dt,
-  .bacon #play .imgholder .wrapper_dt {
-    width: 100%;
-    height: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-image: url("../img/WS_wrapper_DT.png"); }
-  .bacon #work .imgholder .wrapper_mobile_lg,
-  .bacon #play .imgholder .wrapper_mobile_lg {
-    width: 100%;
-    height: 100%;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    top: 0;
-    left: 0;
-    background-size: cover;
-    background-image: url("../img/WS_wrapper_Mobile_lg.png"); }
-  .bacon #work .imgholder .wrapper_mobile,
-  .bacon #play .imgholder .wrapper_mobile {
-    height: 83.8%;
-    width: 34.1%;
-    bottom: 0;
-    right: 0;
-    z-index: 0; }
-    .bacon #work .imgholder .wrapper_mobile .wrapper_mobile_phone,
-    .bacon #play .imgholder .wrapper_mobile .wrapper_mobile_phone {
-      width: 100%;
-      height: 100%;
-      background-image: url("../img/WS_wrapper_mobile.png");
-      background-size: contain; }
-    .bacon #work .imgholder .wrapper_mobile .wrapper_mobile_screen,
-    .bacon #play .imgholder .wrapper_mobile .wrapper_mobile_screen {
-      position: absolute;
-      height: 84%;
-      width: 93%;
-      left: 2px;
-      bottom: 6%;
-      overflow: hidden;
-      z-index: -1;
-      background-color: #FFF; }
-      .bacon #work .imgholder .wrapper_mobile .wrapper_mobile_screen .wrapper_mobile_img,
-      .bacon #play .imgholder .wrapper_mobile .wrapper_mobile_screen .wrapper_mobile_img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        transition: all 0.3s ease-out;
-        width: 100%;
-        height: 100%; }
-  .bacon #work .imgholder .skill_badge,
-  .bacon #play .imgholder .skill_badge {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    left: 0;
-    bottom: 0;
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    background-position: center center; }
-    .bacon #work .imgholder .skill_badge[data="angular"],
-    .bacon #play .imgholder .skill_badge[data="angular"] {
-      background-image: url("../img/skills_angular.png"); }
-    .bacon #work .imgholder .skill_badge[data="ionic"],
-    .bacon #play .imgholder .skill_badge[data="ionic"] {
-      background-image: url("../img/skills_ionic.png"); }
-    .bacon #work .imgholder .skill_badge[data="nativescript"],
-    .bacon #play .imgholder .skill_badge[data="nativescript"] {
-      background-image: url("../img/skills_NativeScript.png"); }
+  height: 100%;
+}
+.bacon #work .imgholder a,
+.bacon #play .imgholder a {
+  cursor: pointer;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.bacon #work .imgholder .webpage,
+.bacon #play .imgholder .webpage {
+  top: 16%;
+  left: 8%;
+}
+.bacon #work .imgholder .mobileapp,
+.bacon #play .imgholder .mobileapp {
+  top: 12%;
+  left: 0%;
+}
+.bacon #work .imgholder img,
+.bacon #play .imgholder img {
+  display: block;
+  position: relative;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease-out;
+  opacity: 0.9;
+}
+.bacon #work .imgholder .overlay,
+.bacon #play .imgholder .overlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 30%;
+  margin-top: 30%;
+  color: #000;
+  padding-top: 8%;
+  text-align: center;
+  font-weight: bold;
+}
+.bacon #work .imgholder .wrap-top,
+.bacon #play .imgholder .wrap-top {
+  top: 14.5%;
+}
+.bacon #work .imgholder .wrap-right,
+.bacon #play .imgholder .wrap-right {
+  left: -3%;
+}
+.bacon #work .imgholder .wrap-small,
+.bacon #play .imgholder .wrap-small {
+  width: 80%;
+}
+.bacon #work .imgholder .wrapper_dt,
+.bacon #work .imgholder .wrapper_mobile,
+.bacon #work .imgholder .wrapper_mobile_lg,
+.bacon #work .imgholder .skill_badge,
+.bacon #play .imgholder .wrapper_dt,
+.bacon #play .imgholder .wrapper_mobile,
+.bacon #play .imgholder .wrapper_mobile_lg,
+.bacon #play .imgholder .skill_badge {
+  position: absolute;
+  transition: all 0.3s ease-out;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
+.bacon #work .imgholder .wrapper_dt,
+.bacon #play .imgholder .wrapper_dt {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("../img/WS_wrapper_DT.png");
+}
+.bacon #work .imgholder .wrapper_mobile_lg,
+.bacon #play .imgholder .wrapper_mobile_lg {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-image: url("../img/WS_wrapper_Mobile_lg.png");
+}
+.bacon #work .imgholder .wrapper_mobile,
+.bacon #play .imgholder .wrapper_mobile {
+  height: 83.8%;
+  width: 34.1%;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+.bacon #work .imgholder .wrapper_mobile .wrapper_mobile_phone,
+.bacon #play .imgholder .wrapper_mobile .wrapper_mobile_phone {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/WS_wrapper_mobile.png");
+  background-size: contain;
+}
+.bacon #work .imgholder .wrapper_mobile .wrapper_mobile_screen,
+.bacon #play .imgholder .wrapper_mobile .wrapper_mobile_screen {
+  position: absolute;
+  height: 84%;
+  width: 93%;
+  left: 2px;
+  bottom: 6%;
+  overflow: hidden;
+  z-index: -1;
+  background-color: #fff;
+}
+.bacon
+  #work
+  .imgholder
+  .wrapper_mobile
+  .wrapper_mobile_screen
+  .wrapper_mobile_img,
+.bacon
+  #play
+  .imgholder
+  .wrapper_mobile
+  .wrapper_mobile_screen
+  .wrapper_mobile_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-out;
+  width: 100%;
+  height: 100%;
+}
+.bacon #work .imgholder .skill_badge,
+.bacon #play .imgholder .skill_badge {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-position: center center;
+}
+.bacon #work .imgholder .skill_badge[data="angular"],
+.bacon #play .imgholder .skill_badge[data="angular"] {
+  background-image: url("../img/skills_angular.png");
+}
+.bacon #work .imgholder .skill_badge[data="ionic"],
+.bacon #play .imgholder .skill_badge[data="ionic"] {
+  background-image: url("../img/skills_ionic.png");
+}
+.bacon #work .imgholder .skill_badge[data="nativescript"],
+.bacon #play .imgholder .skill_badge[data="nativescript"] {
+  background-image: url("../img/skills_NativeScript.png");
+}
+.bacon #work .imgholder .skill_badge[data="react"],
+.bacon #play .imgholder .skill_badge[data="react"] {
+  background-image: url("../img/skills_react.png");
+}
 
 .bacon #work .imgholder:hover img,
 .bacon #play .imgholder:hover img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   transform: scale(1.1);
-  opacity: 1; }
+  opacity: 1;
+}
 
 .bacon #work .imgholder:hover .wrapper_dt,
 .bacon #work .imgholder:hover .wrapper_mobile_lg,
@@ -290,10 +361,13 @@
 .bacon #play .imgholder:hover .wrapper_mobile_lg,
 .bacon #play .imgholder:hover .skill_badge {
   -webkit-filter: grayscale(0%);
-  filter: grayscale(0%); }
+  filter: grayscale(0%);
+}
 
 .bacon #contact #contactform {
-  color: #000; }
-  .bacon #contact #contactform .form-details,
-  .bacon #contact #contactform .cm_tel {
-    display: none; }
+  color: #000;
+}
+.bacon #contact #contactform .form-details,
+.bacon #contact #contactform .cm_tel {
+  display: none;
+}

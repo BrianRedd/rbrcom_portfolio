@@ -756,6 +756,59 @@
             </div>
         </div>
     </div>
+    <div class="modal fade bacon_modal" role="dialog" tabindex="-1" id="pers_pomp">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Downfall of Pompeii Online</h4>
+                    <a href="/Games/Pompeii/" target="_blank">
+                        <button type="button" class="close">
+                            <span class="fa fa-link text-white"></span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/BrianRedd/Pompeii" target="_blank">
+                        <button type="button" class="close">
+                            <span class="fab fa-github text-white"></span>
+                        </button>
+                    </a>
+                    <button type="button" class="close" data-dismiss="modal">
+						<span class="fa fa-close text-white"></span>
+					</button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="thedream">The Dream:</h4>
+                    <h5>To convert Downfall of Pompeii boardgame into React web app</h5>
+                    <p>The Downfall of Pompeii is a boardgame from Mayfair Games in which 2-4 players first populate the tranquil city of Pompeii as it 
+                      rests peacefully in the shadow of Mount Vesuvius, and then try and save as many as you can as Vesuvius Erupts and threatens the 
+                      Pompeiians with firey death. Fun for the entire family!</p>
+                    <p>Like <a href="/Games/RoboRally/" target="_blank">RoboRally</a>, I always felt that the Downfall of Pompeii 
+                      was not only exceptionally fun, but also lent itself to a computerized version. In early 2020 I endeavored to do exactly that.</p>
+                    <h4 class="thethought">The Thought Process: Challenges</h4>
+                    <p>Since I had been working professionally with React for over a year, I decided to try my hand at using React to build my Pompeii web app.</p>
+                    <p>It is, in many ways, a simpler game than RoboRally, with literally many fewer moving parts.  There is nearly no true animations
+                       in place, and only one board. However, in order to make sure that the artificial intelligence of the non-human players was much
+                        more &quot;intelligent&quot; than the robots of RoboRally, I had to play around with graph theory and rudimentary decision matrices. (See
+                      my versions of the <a href="/projects/islandproblem/">island problem</a> and <a href="/projects/surroundedbylava/">&quot;surrounded by lava&quot;</a> as
+                       my explorations of these). The result is a much more enjoyable gaming experience, I feel, as the computerized opponents are much more 
+                       capable than my poor dumb rally robots. If I only knew then what I know now... who knows, I may re-write RoboRally someday after all.</p>
+                    <h4 class="thebuild">The Build:</h4>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p>The <a href="/Games/Pompeii/" target="_blank">end result</a> is a fully functional game that 2-4 players in any combination of human or AI can play. 
+                              The instructions are much more comprehensive than RoboRally's, and while the graphics and animations may not be as exciting, the gameplay is still,
+                              I feel, smooth and intuitive.  I was even able to grant the six AI players slightly different personalities, so each plays with a slightly different
+                              strategy based on how each player values different criteria (courageous, social, and lawful).
+                            </p>
+                            <p>NOTE: This is not a licensed version; this is intended for personal use only. I do not own any of the rights to this game, and it is placed here as an example of my coding skills only.</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <a href="/Games/Pompeii/" target="_blank"><img class="img-fluid" src="img/Pers_pomp_full.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--Main Screen-->
     <div class="main" id="top">
@@ -1190,6 +1243,16 @@
                                         <img class="webpage img-fluid" src="img/pers_robo_full.png" alt="RoboRally" />
                                         <div class="wrapper_dt"></div>
                                         <div class="overlay hidden-xs-down">RoboRally Online</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 p-1">
+                                <div class="imgholder">
+                                    <a data-toggle="modal" data-target="#pers_pomp">
+                                        <img class="webpage img-fluid" src="img/pers_pomp_full.png" alt="Downfall of Pompeii" />
+                                        <div class="wrapper_dt"></div>
+                                        <div class="skill_badge" data="react" data-toggle="tooltip" data-html="true" data-placement="right" title="Built with React"></div>
+                                        <div class="overlay hidden-xs-down">Downfall of Pompeii Online</div>
                                     </a>
                                 </div>
                             </div>
